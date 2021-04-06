@@ -21,7 +21,7 @@ const NewsBar = () => {
             <TouchableOpacity style={{backgroundColor: 'green', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 5}}>
               <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', textAlign: 'center'}}>Connect</Text>
             </TouchableOpacity>
-        <View style={{borderBottomColor: 'grey', borderBottomWidth: 1, marginTop: 18, marginBottom: 16}}></View>
+        <View style={{borderBottomColor: 'grey', borderBottomWidth: 1, marginTop: 18}}></View>
     </View>
     )
 }

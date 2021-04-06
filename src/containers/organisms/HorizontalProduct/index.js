@@ -5,7 +5,7 @@ import Scrollitem from '../../../components/molecules/Scrolitem'
 class ScrolProduct extends Component {
     render() {
         return(
-            <View style={{paddingTop: 20}}>
+            <View style={{paddingTop: 16}}>
               <View style={{height: 30, width: 55, marginLeft: 16}}> 
                 <Image source={require('../../../assets/icon/gambar.jpeg')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1, marginBottom: 8}}/>
               </View>
@@ -20,7 +20,7 @@ class ScrolProduct extends Component {
                   <Scrollitem title="RM Pak Bambang" img={require('../../../assets/icon/sopikan.jpeg')}/>
                   <Scrollitem title="RM Pak Narso" img={require('../../../assets/icon/kue.jpeg')}/>
               </ScrollView>
-              <View style={{borderBottomWidth: 1, borderBottomColor: 'grey', marginBottom: 20, marginHorizontal: 16, marginTop: 16}}></View>
+              <View style={{borderBottomWidth: 1, borderBottomColor: 'grey', marginBottom: 14, marginHorizontal: 16, marginTop: 20}}></View>
             </View>
         )
     }
