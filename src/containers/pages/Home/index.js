@@ -11,6 +11,7 @@ import MainFaeture from '../../../containers/organisms/Mainfeature'
 import NavBar from '../../../containers/organisms/NavBar'
 import BoxProduct from '../../../components/molecules/BoxProduct'
 
+
 export class Home extends Component {
     render() {
         return (

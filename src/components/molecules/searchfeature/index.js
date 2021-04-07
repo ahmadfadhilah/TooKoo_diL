@@ -19,6 +19,3 @@ const SeacrhBar = (props) => {
 }
 
 export default SeacrhBar
-
-
-{/* disini pakai ukuran gambar 32px */}
