@@ -1,8 +1,65 @@
+import AsyncStorage from '@react-native-community/async-storage';
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, Image, TextInput,StatusBar, TouchableOpacity } from 'react-native'
+import { Text, View, Image, TextInput,StatusBar, TouchableOpacity } from 'react-native'
 import Icongoogle from 'react-native-vector-icons/FontAwesome5Pro'
 
 export default class index extends Component {
+    constructor() {
+        super()
+        this.state={
+            email: '',
+            password: ''
+        }
+    }
+
+    gotoHome() {
+        this.props.navigation.navigate('Home')
+    }
+
+    gotoRegister() {
+        this.props.navigation.navigate('Register')
+    }
+
+    Login = () => {
+        const { email, password } = this.state
+
+        // POST json
+        var dataToSend = {email: email, password: password};
+        // making data to send on server
+        var formBody = [];
+        for (var key in dataToSend) {
+            var encodedKey = encodeURIComponent(key);
+            var encodedValue = encodeURIComponent(dataToSend[key]);
+            formBody.push(encodedKey + "=" + encodedValue);
+        }
+        formBody = formBody.join("&")
+        // POST request
+        fetch('https://tookoodil.herokuapp.com/api/login ', {
+            method: "POST",//request Type
+            body: formBody,//post body
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+            }
+        })
+        .then((response) => response.json())
+        //if response is in json then in success
+        .then((responseJson) => {
+            console.log(responseJson)
+            const {token, error} = responseJson
+            if(token){
+                AsyncStorage.setItem('token', token). then(() => {
+                    this.gotoHome()
+                })
+            }else {
+                alert('error cuy')
+            }
+        })
+        //if response is not in json then in eror
+        .catch((error) => {
+            alert('error lagi cuy')
+        })
+    }
+
     render() {
         return (
             <>
@@ -18,21 +75,25 @@ export default class index extends Component {
                     <View style={{marginHorizontal: 25, marginTop: 80,}}> 
                         <TextInput 
                         placeholder="Email" 
-                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 15}}/>
+                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 15}}
+                        onChangeText={email => this.setState({email})}
+                        />
                         <TextInput 
                         placeholder="Password" 
-                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', }}/>
+                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', }}
+                        onChangeText={password => this.setState({password})}
+                        />
                         <TouchableOpacity>
                         <Text style={{fontSize: 12, textAlign: 'right', marginTop: 9, color: 'grey'}}>Forget Password</Text>
                         </TouchableOpacity>
                     </View>
                     <View>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => this.Login()}>
                             <Text style={{textAlign: 'center',fontSize: 20, fontWeight: 'bold',backgroundColor: 'yellow',opacity: 0.8,borderRadius: 15,width: '90%', height: 38,alignSelf: 'center',marginTop: 60, justifyContent: 'center', padding: 5}}>Sign In</Text>
                         </TouchableOpacity>
                         <View style={{flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 137}}>
                             <Text style={{fontSize: 12, marginTop: 8}}>New User /</Text>
-                            <TouchableOpacity>
+                            <TouchableOpacity onPress={() => this.gotoRegister()}>
                             <Text style={{fontSize: 12, marginTop: 8}}>Sign Up</Text>
                             </TouchableOpacity>
                         </View>

@@ -3,6 +3,68 @@ import { Text, View, StyleSheet, Image, TextInput ,StatusBar, TouchableOpacity }
 import Icongoogle from 'react-native-vector-icons/FontAwesome5Pro'
 
 export default class index extends Component {
+    constructor() {
+        super()
+        this.state={
+            name: '',
+            email: '',
+            password: '',
+            password_confirmation: ''
+        }
+    }
+
+    gotoLogin() {
+        this.props.navigation.goBack()
+    }
+
+    Register() {
+        const {name, email, password, password_confirmation} = this.state;
+
+        //post json
+        var dataToSend = {
+            name: name,
+            email: email,
+            password: password,
+            password_confirmation: password_confirmation
+        };
+
+        //making data to send on server
+        var formBody = [];
+        for (var key in dataToSend) {
+            var encodedKey = encodeURIComponent (key);
+            var encodedValue = encodeURIComponent (dataToSend[key])
+            formBody.push (encodedKey + "=" + encodedValue)
+        }
+        formBody = formBody.join ('&');
+
+        //Post request 
+        fetch ('https://tookoodil.herokuapp.com/api/register' , {
+            method: "POST",
+            body: formBody,
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+            },
+        })
+        .then (response => response.json ())
+
+        //if response is in json then in success
+        .then(responseJson => {
+            console.log (responseJson);
+            const {token} = responseJson;
+            if (token) {
+                alert('Sukses Login');
+                this.gotoLogin();
+            }else{
+                alert('coba mata nya digunain');
+            }
+        })
+        
+        //if response is not in json then in error
+        .catch (error => {
+            alert ('diliat form lu cuk')
+        })
+    }
+
     render() {
         return (
             <>
@@ -18,19 +80,27 @@ export default class index extends Component {
                     <View style={{marginHorizontal: 25, marginTop: 6,}}> 
                         <TextInput 
                         placeholder="name" 
-                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}/>
+                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}
+                        onChangeText={name => this.setState({name})}
+                        />
                         <TextInput 
                         placeholder="email" 
-                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}/>
+                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}
+                        onChangeText={email => this.setState({email})}
+                        />
                         <TextInput 
                         placeholder="password"
-                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}/>
+                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}
+                        onChangeText={password => this.setState({password})}
+                        />
                         <TextInput
                         placeholder="password_confirmation" 
-                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}/>
+                        style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}
+                        onChangeText={password_confirmation => this.setState({password_confirmation})}
+                        />
                     </View>
                     <View>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => this.Register()}>
                             <Text style={{textAlign: 'center',fontSize: 20, fontWeight: 'bold',backgroundColor: 'yellow',opacity: 0.8,borderRadius: 15,width: '90%', height: 38,alignSelf: 'center',marginTop: 23, justifyContent: 'center', padding: 5, color: 'black'}}>Sign up</Text>
                         </TouchableOpacity>
                     </View>
