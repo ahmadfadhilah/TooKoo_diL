@@ -49,6 +49,7 @@ export default class index extends Component {
             if(token){
                 AsyncStorage.setItem('token', token). then(() => {
                     this.gotoHome()
+                    alert('sukses cuy')
                 })
             }else {
                 alert('error cuy')
