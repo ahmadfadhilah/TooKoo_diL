@@ -92,11 +92,13 @@ export default class index extends Component {
                         placeholder="password"
                         style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}
                         onChangeText={password => this.setState({password})}
+                        secureTextEntry={true}
                         />
                         <TextInput
                         placeholder="password_confirmation" 
                         style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', marginBottom: 17}}
                         onChangeText={password_confirmation => this.setState({password_confirmation})}
+                        secureTextEntry={true}
                         />
                     </View>
                     <View>

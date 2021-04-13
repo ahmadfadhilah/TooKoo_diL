@@ -12,6 +12,10 @@ export default class index extends Component {
         }
     }
 
+    gotoForgotPw() {
+        this.props.navigation.navigate('ForgotPw')
+    }
+
     gotoHome() {
         this.props.navigation.navigate('Home')
     }
@@ -83,8 +87,9 @@ export default class index extends Component {
                         placeholder="Password" 
                         style={{borderWidth: 2, borderColor: '#E8E8E8', borderRadius: 25, height: 38, fontSize: 14, paddingLeft: 40, paddingRight: 20, backgroundColor: 'white', }}
                         onChangeText={password => this.setState({password})}
+                        secureTextEntry={true}
                         />
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => this.gotoForgotPw()}>
                         <Text style={{fontSize: 12, textAlign: 'right', marginTop: 9, color: 'grey'}}>Forget Password</Text>
                         </TouchableOpacity>
                     </View>
