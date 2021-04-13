@@ -11,11 +11,11 @@ function Router() {
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode={'none'}>
-        {/* <Stack.Screen name="Home" component={Home} /> */}
-        {/* <Stack.Screen name="Login" component={Login}/> */}
-        {/* <Stack.Screen name="Register" component={Register}/> */}
-        {/* <Stack.Screen name="NewsDetail" component={NewsDetail}/> */}
-        {/* <Stack.Screen name="Account" component={Account} /> */}
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Login" component={Login}/>
+        <Stack.Screen name="Register" component={Register}/>
+        <Stack.Screen name="NewsDetail" component={NewsDetail}/>
+        <Stack.Screen name="Account" component={Account} />
         <Stack.Screen name="NotAccount" component={NotAccount} />
       </Stack.Navigator>
     </NavigationContainer>

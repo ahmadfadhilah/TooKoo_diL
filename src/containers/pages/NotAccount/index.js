@@ -6,6 +6,15 @@ import Help from 'react-native-vector-icons/Ionicons'
 import Clock from 'react-native-vector-icons/AntDesign'
 
 export default class NotAccount extends Component {
+
+    gotoLogin() {
+        this.props.navigation.navigate('Login')
+    }
+
+    gotoRegister() {
+        this.props.navigation.navigate('Register')
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -22,10 +31,10 @@ export default class NotAccount extends Component {
                     <View style={styles.user}>
                         <Image source={require('../../../assets/icon/user.png')} style={styles.userImg}/>
                         <View style={styles.not}>
-                            <TouchableOpacity style={styles.Account}>
+                            <TouchableOpacity style={styles.Account} onPress={() => this.gotoLogin()}>
                                 <Text style={styles.textl}>Login</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.Account1}>
+                            <TouchableOpacity style={styles.Account1} onPress={() => this.gotoRegister()}>
                                 <Text style={styles.textd}>Daftar</Text>
                             </TouchableOpacity>
                         </View>
