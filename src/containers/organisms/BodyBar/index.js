@@ -12,10 +12,10 @@ export class BodyBar extends Component {
                 <Text style={{fontSize: 16, fontWeight: 'bold', color: 'white'}}>Rp 999.999</Text>
               </View>
               <View style={{flexDirection: 'row', paddingTop: 20, paddingBottom: 14, backgroundColor: '#8181F7', borderBottomLeftRadius: 4, borderBottomRightRadius: 4}}>
-                <BodyBarIcon body="bayar" img={require('../../../assets/icon/help.png')}/>
-                <BodyBarIcon body="kemas" img={require('../../../assets/icon/help.png')}/>
-                <BodyBarIcon body="kirim" img={require('../../../assets/icon/help.png')}/>
-                <BodyBarIcon body="rating" img={require('../../../assets/icon/help.png')}/>
+                <BodyBarIcon body="bayar" img={require('../../../assets/icon/donation.png')}/>
+                <BodyBarIcon body="kemas" img={require('../../../assets/icon/box.png')}/>
+                <BodyBarIcon body="kirim" img={require('../../../assets/icon/send.png')}/>
+                <BodyBarIcon body="rating" img={require('../../../assets/icon/star.png')}/>
               </View>
             </View>
         )
