@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient'
+
 
 export class ForgotPw extends Component {
     render() {

@@ -20,7 +20,7 @@ export default class Account extends Component {
                         </TouchableOpacity>
                     </View>
                     <View style={styles.user}>
-                        <Image source={require('../../../assets/icon/profile.png')} style={styles.userImg}/>
+                        <Image source={require('../../../../assets/icon/profile.png')} style={styles.userImg}/>
                         <Text style={styles.userText}>StevenAsep</Text>
                         <Text style={styles.userText1}>StevenAsep000@gmail.com</Text>
                     </View>

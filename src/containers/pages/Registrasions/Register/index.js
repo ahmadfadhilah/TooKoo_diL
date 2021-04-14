@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image, TextInput ,StatusBar, TouchableOpacity } from 'react-native'
 import Icongoogle from 'react-native-vector-icons/FontAwesome5Pro'
 
-export default class index extends Component {
+export default class Register extends Component {
     constructor() {
         super()
         this.state={
@@ -71,7 +71,7 @@ export default class index extends Component {
             <StatusBar translucent backgroundColor='transparent'/>
             <View style={{flex: 1, backgroundColor: 'white'}}>
                 <View style={{alignItems: 'center'}}>
-                    <Image source={require('../../../assets/icon/gam.jpg')} style={{width: '100%', height: 210}}/>
+                    <Image source={require('../../../../assets/icon/gam.jpg')} style={{width: '100%', height: 210}}/>
                 </View>
 
                 <View style={{backgroundColor: 'white'}}>

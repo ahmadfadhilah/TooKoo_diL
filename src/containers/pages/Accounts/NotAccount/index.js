@@ -29,7 +29,7 @@ export default class NotAccount extends Component {
                         </TouchableOpacity>
                     </View>
                     <View style={styles.user}>
-                        <Image source={require('../../../assets/icon/user.png')} style={styles.userImg}/>
+                        <Image source={require('../../../../assets/icon/user.png')} style={styles.userImg}/>
                         <View style={styles.not}>
                             <TouchableOpacity style={styles.Account} onPress={() => this.gotoLogin()}>
                                 <Text style={styles.textl}>Login</Text>
