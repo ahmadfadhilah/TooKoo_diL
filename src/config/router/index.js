@@ -5,8 +5,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 import { Home, NewsDetail } from '../../containers/pages/Homes';
-import { Login, Register, ForgotPw } from '../../containers/pages/Registrasions'
-import { Account, NotAccount, SettingAccount } from '../../containers/pages/Accounts';
+import { Login, Register, ForgotPw, SplashScreen } from '../../containers/pages/Registrasions'
+import { Account, NotAccount, SettingAccount, SettingProfile, Pembeda } from '../../containers/pages/Accounts';
 import { Order, barOrder } from '../../containers/pages/Orders'
 import { Notivikasi, barNotiv } from '../../containers/pages/Notifications'
 
@@ -18,16 +18,18 @@ function Router() {
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode={'none'}>
+        <Stack.Screen name="SplashScreeen" component={SplashScreen}/>
         <Stack.Screen name="Home" component={Buttom} />
         <Stack.Screen name="Order" component={Order} />
         <Stack.Screen name="Notivikasi" component={Notivikasi} />
-        <Stack.Screen name="Account" component={NotAccount} />
+        <Stack.Screen name="Account" component={Account} />
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Register" component={Register}/>
         <Stack.Screen name="NewsDetail" component={NewsDetail}/>
         <Stack.Screen name="NotAccount" component={NotAccount} />
         <Stack.Screen name="ForgotPw" component={ForgotPw} />
         <Stack.Screen name="SettingAccount" component={SettingAccount} />
+        <Stack.Screen name="SettingProfile" component={SettingProfile} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -68,7 +70,8 @@ function Buttom() {
           <MaterialCommunityIcons name="account-group" color={color} size={size} />
         ),
       }}
-      component={NotAccount} />
+      component={Pembeda} />
     </Tab.Navigator>
   );
 }
+

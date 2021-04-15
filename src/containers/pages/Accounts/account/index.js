@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import Simple from 'react-native-vector-icons/SimpleLineIcons'
 import Help from 'react-native-vector-icons/Ionicons'
@@ -11,13 +11,25 @@ export default class Account extends Component {
         this.props.navigation.navigate('SettingAccount')
     }
 
+    gotoProfile() {
+        this.props.navigation.navigate('SettingProfile')
+    }
+
+    gotoHome() {
+        this.props.navigation.navigate('Home')
+    }
+
+    gotoRegister() {
+        this.props.navigation.navigate('Register')
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 {/* profile atas  */}
                 <View style={{backgroundColor: '#ffff3d'}}>
                     <View style={styles.Icon}>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => this.gotoHome()}>
                         <Icon name='arrow-back-ios' size={25}/>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => this.gotoSetting()}>
@@ -25,7 +37,9 @@ export default class Account extends Component {
                         </TouchableOpacity>
                     </View>
                     <View style={styles.user}>
+                        <TouchableOpacity onPress={() => this.gotoProfile()}>
                         <Image source={require('../../../../assets/icon/profile.png')} style={styles.userImg}/>
+                        </TouchableOpacity>
                         <Text style={styles.userText}>StevenAsep</Text>
                         <Text style={styles.userText1}>StevenAsep000@gmail.com</Text>
                     </View>
@@ -77,7 +91,7 @@ export default class Account extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal1}>
+                    <TouchableOpacity style={styles.namehal1} onPress={() => this.gotoRegister()}>
                     <Simple name="logout" size={20} style={{paddingLeft: 5}}/>
                     <Text style={styles.text}>Log out</Text>
                     </TouchableOpacity>
@@ -121,7 +135,7 @@ const styles = StyleSheet.create ({
         paddingTop: 3
     },
     name: {
-        marginTop: 12,
+        marginTop: 14,
     },
     namehal: {
         borderBottomWidth: 1,

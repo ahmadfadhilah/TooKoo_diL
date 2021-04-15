@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, ScrollView } from 'react-native'
+import { View, ScrollView, Modal } from 'react-native'
 
 import BenerBar from '../../../../components/molecules/Bannerfeature'
 import NewsBar from '../../../../components/molecules/Infofeature'
@@ -25,7 +25,10 @@ export class Home extends Component {
                 <BenerBar />
                 <ScrolProduct />
                 <BoxProduct />
-              </ScrollView> 
+              </ScrollView>
+              {/* <Modal transparent visible={true}>
+                <View style={{height: 50, width: 50, backgroundColor: 'red', alignItems: 'center', flex: 1, justifyContent: 'center'}}></View>
+              </Modal> */}
             </View>
         )
     }
