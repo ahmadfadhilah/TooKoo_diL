@@ -14,7 +14,7 @@ const SeacrhBar = (props) => {
           <View style={{width: 35, alignItems: 'center', justifyContent: 'center'}}>
             <Image source={require("../../../assets/icon/chat.png")}/>
           </View>
-          </View>
+        </View>
     )
 }
 

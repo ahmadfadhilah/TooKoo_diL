@@ -19,8 +19,8 @@ export default class Account extends Component {
         this.props.navigation.navigate('Home')
     }
 
-    gotoRegister() {
-        this.props.navigation.navigate('Register')
+    gotoLogin() {
+        this.props.navigation.navigate('Login')
     }
 
     render() {
@@ -91,7 +91,7 @@ export default class Account extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal1} onPress={() => this.gotoRegister()}>
+                    <TouchableOpacity style={styles.namehal1} onPress={() => this.gotoLogin()}>
                     <Simple name="logout" size={20} style={{paddingLeft: 5}}/>
                     <Text style={styles.text}>Log out</Text>
                     </TouchableOpacity>

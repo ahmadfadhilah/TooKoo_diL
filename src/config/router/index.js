@@ -2,7 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import *as React from 'react'
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 import { Home, NewsDetail } from '../../containers/pages/Homes';
 import { Login, Register, ForgotPw, SplashScreen } from '../../containers/pages/Registrasions'
@@ -12,6 +12,9 @@ import { Notivikasi, barNotiv } from '../../containers/pages/Notifications'
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
+
+
+// Stack Navigatior
 const Stack = createStackNavigator();
 
 function Router() {
@@ -30,6 +33,7 @@ function Router() {
         <Stack.Screen name="ForgotPw" component={ForgotPw} />
         <Stack.Screen name="SettingAccount" component={SettingAccount} />
         <Stack.Screen name="SettingProfile" component={SettingProfile} />
+        <Stack.Screen name="TabNavigator" component={Tob} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -37,7 +41,7 @@ function Router() {
 
 export default Router;
 
-
+// Bottom Tab
 const Tab = createBottomTabNavigator();
 
 function Buttom() {
@@ -74,4 +78,17 @@ function Buttom() {
     </Tab.Navigator>
   );
 }
+
+
+const TobTab = createMaterialTopTabNavigator();
+
+function Tob() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={Login} />
+      <Tab.Screen name="Settings" component={Register} />
+    </Tab.Navigator>
+  );
+}
+
 

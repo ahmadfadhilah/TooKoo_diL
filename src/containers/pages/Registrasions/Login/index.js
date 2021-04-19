@@ -95,7 +95,7 @@ export default class Login extends Component {
                     </View>
                     <View>
                         <TouchableOpacity onPress={() => this.Login()}>
-                            <Text style={{textAlign: 'center',fontSize: 20, fontWeight: 'bold',backgroundColor: 'yellow',opacity: 0.8,borderRadius: 15,width: '90%', height: 38,alignSelf: 'center',marginTop: 60, justifyContent: 'center', padding: 5}}>Sign In</Text>
+                            <Text style={{textAlign: 'center',fontSize: 20, fontWeight: 'bold',backgroundColor: '#FEDE00',opacity: 0.8,borderRadius: 15,width: '90%', height: 38,alignSelf: 'center',marginTop: 60, justifyContent: 'center', padding: 5}}>Sign In</Text>
                         </TouchableOpacity>
                         <View style={{flexDirection: 'row', justifyContent: 'space-between', marginHorizontal: 137}}>
                             <Text style={{fontSize: 12, marginTop: 8}}>New User /</Text>

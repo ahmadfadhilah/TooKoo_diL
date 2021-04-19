@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image, TouchableOpacity} from 'react-native';
 
-const BenerBar = () => {
+const BenerBar = (props) => {
     return(
         <View style={{padding: 16, paddingBottom: 0}}>
             <View style={{position: 'relative'}}>
