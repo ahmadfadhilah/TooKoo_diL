@@ -23,6 +23,14 @@ export default class Account extends Component {
         this.props.navigation.navigate('Login')
     }
 
+    gotoPesananSaya() {
+        this.props.navigation.navigate('PesananSaya')
+    }
+
+    gotoNavTopTab() {
+        this.props.navigation.navigate('NavTopTab')
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -53,7 +61,7 @@ export default class Account extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal}>
+                    <TouchableOpacity style={styles.namehal} onPress={() => this.gotoPesananSaya()}>
                     <Help name="clipboard-outline" size={22} style={{paddingLeft: 5}}/>
                     <Text style={styles.text}>Pesanan saya</Text>
                     </TouchableOpacity>
@@ -85,7 +93,7 @@ export default class Account extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal}>
+                    <TouchableOpacity style={styles.namehal} onPress={() => this.gotoNavTopTab()}>
                     <Help name="help-outline" size={22} style={{paddingLeft: 5}}/>
                     <Text style={styles.text}>Pusat Bantuan</Text>
                     </TouchableOpacity>

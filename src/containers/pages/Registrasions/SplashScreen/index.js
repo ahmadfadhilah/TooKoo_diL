@@ -15,7 +15,7 @@ export default class SplashScreen extends Component {
             this.props.navigation.replace('Home')
         }, 3000);
 
-        const gradienHeight = 500;
+        const gradienHeight = 600;
         const gradienBackground = '#F9D423';
         const data = Array .from({ length: gradienHeight });
         return (

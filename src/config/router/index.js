@@ -1,17 +1,18 @@
-import { NavigationContainer } from '@react-navigation/native';
 import *as React from 'react'
+import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+
 
 import { Home, NewsDetail } from '../../containers/pages/Homes';
-import { Login, Register, ForgotPw, SplashScreen } from '../../containers/pages/Registrasions'
-import { Account, NotAccount, SettingAccount, SettingProfile, Pembeda } from '../../containers/pages/Accounts';
+import { Login, Register, ForgotPw, SplashScreen, NavTobTab } from '../../containers/pages/Registrasions'
+import { Account, NotAccount, SettingAccount, SettingProfile, Pembeda, PesananSaya } from '../../containers/pages/Accounts';
 import { Order, barOrder } from '../../containers/pages/Orders'
 import { Notivikasi, barNotiv } from '../../containers/pages/Notifications'
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
+import TOB from './Tobtab';
 
 
 // Stack Navigatior
@@ -33,7 +34,9 @@ function Router() {
         <Stack.Screen name="ForgotPw" component={ForgotPw} />
         <Stack.Screen name="SettingAccount" component={SettingAccount} />
         <Stack.Screen name="SettingProfile" component={SettingProfile} />
-        <Stack.Screen name="TabNavigator" component={Tob} />
+        <Stack.Screen name="PesananSaya" component={PesananSaya} />
+        <Stack.Screen name="TOB" component={TOB} />
+        <Stack.Screen name="NavTopTab" component={NavTobTab} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -79,16 +82,5 @@ function Buttom() {
   );
 }
 
-
-const TobTab = createMaterialTopTabNavigator();
-
-function Tob() {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={Login} />
-      <Tab.Screen name="Settings" component={Register} />
-    </Tab.Navigator>
-  );
-}
 
 
