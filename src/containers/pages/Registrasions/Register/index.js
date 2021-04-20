@@ -70,13 +70,13 @@ export default class Register extends Component {
             <>
             <StatusBar translucent backgroundColor='transparent'/>
             <View style={{flex: 1, backgroundColor: 'white'}}>
-                <View style={{alignItems: 'center'}}>
+                {/* <View style={{alignItems: 'center'}}>
                     <Image source={require('../../../../assets/icon/gam.jpg')} style={{width: '100%', height: 210}}/>
-                </View>
+                </View> */}
 
                 <View style={{backgroundColor: 'white'}}>
-                    <View style={{top: -20, borderTopLeftRadius: 35, borderTopRightRadius: 35, alignItems: 'center', backgroundColor: 'white', height: 20}}></View>
-                        <Text style={{fontSize: 18, fontWeight: 'bold', alignSelf: 'center', top: -37, borderBottomWidth: 1.7, borderBottomColor: '#FFFF00', paddingBottom: 5, paddingHorizontal: 35}}>Sign up</Text>
+                    {/* <View style={{top: -20, borderTopLeftRadius: 35, borderTopRightRadius: 35, alignItems: 'center', backgroundColor: 'white', height: 20}}></View>
+                        <Text style={{fontSize: 18, fontWeight: 'bold', alignSelf: 'center', top: -37, borderBottomWidth: 1.7, borderBottomColor: '#FFFF00', paddingBottom: 5, paddingHorizontal: 35}}>Sign up</Text> */}
                     <View style={{marginHorizontal: 25, marginTop: 6,}}> 
                         <TextInput 
                         placeholder="name" 

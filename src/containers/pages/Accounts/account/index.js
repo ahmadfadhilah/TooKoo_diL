@@ -19,10 +19,6 @@ export default class Account extends Component {
         this.props.navigation.navigate('Home')
     }
 
-    gotoLogin() {
-        this.props.navigation.navigate('Login')
-    }
-
     gotoPesananSaya() {
         this.props.navigation.navigate('PesananSaya')
     }
@@ -93,13 +89,13 @@ export default class Account extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal} onPress={() => this.gotoNavTopTab()}>
+                    <TouchableOpacity style={styles.namehal}>
                     <Help name="help-outline" size={22} style={{paddingLeft: 5}}/>
                     <Text style={styles.text}>Pusat Bantuan</Text>
                     </TouchableOpacity>
                 </View>
                 <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal1} onPress={() => this.gotoLogin()}>
+                    <TouchableOpacity style={styles.namehal1} onPress={() => this.gotoNavTopTab()}>
                     <Simple name="logout" size={20} style={{paddingLeft: 5}}/>
                     <Text style={styles.text}>Log out</Text>
                     </TouchableOpacity>

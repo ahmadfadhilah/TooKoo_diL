@@ -11,6 +11,10 @@ export default class NotAccount extends Component {
         this.props.navigation.navigate('SettingAccount')
     }
 
+    gotoNavTobTab() {
+        this.props.navigation.navigate('NavTobTap')
+    }
+
     gotoLogin() {
         this.props.navigation.navigate('Login')
     }

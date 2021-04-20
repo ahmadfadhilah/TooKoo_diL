@@ -1,17 +1,16 @@
 import *as React from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { Login, Register } from '../../containers/pages/Registrasions';
 import BelumBayar from '../../containers/pages/Accounts/PesananSaya/BelumBayar';
 import Dikemas from '../../containers/pages/Accounts/PesananSaya/Dikemas';
 import Dikirim from '../../containers/pages/Accounts/PesananSaya/Dikirim';
 import Selesai from '../../containers/pages/Accounts/PesananSaya/Selesai';
 
-// Tob Tab Register
-const TopTab = createMaterialTopTabNavigator();
+// tobtab daftar pesanan 
+const Tobbar = createMaterialTopTabNavigator();
 
-function TOB() {
+function Tabb() {
   return (
-    <TopTab.Navigator
+    <Tobbar.Navigator
       tabBarOptions={{
         activeTinyColor: "black",
         labelStyle: {fontSize: 15, fontWeight: 'bold'},
@@ -19,19 +18,24 @@ function TOB() {
       }}
       
       >
-      <TopTab.Screen 
-        name="Sign In"
-        component={Login}
-    
+      <Tobbar.Screen 
+        name="Belum Bayar"
+        component={BelumBayar}
         />
-      <TopTab.Screen 
-        name="Sign Up" 
-        component={Register} 
-        
+      <Tobbar.Screen 
+        name="Dikemas" 
+        component={Dikemas} 
         />
-    </TopTab.Navigator>
-  );
+      <Tobbar.Screen 
+        name="Dikirim" 
+        component={Dikirim} 
+        />
+      <Tobbar.Screen 
+        name="Selesai" 
+        component={Selesai} 
+        />
+
+    </Tobbar.Navigator>
+  )
 }
-export default TOB
-
-
+export default Tabb

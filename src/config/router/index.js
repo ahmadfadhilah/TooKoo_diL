@@ -3,16 +3,20 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-
 import { Home, NewsDetail } from '../../containers/pages/Homes';
 import { Login, Register, ForgotPw, SplashScreen, NavTobTab } from '../../containers/pages/Registrasions'
 import { Account, NotAccount, SettingAccount, SettingProfile, Pembeda, PesananSaya } from '../../containers/pages/Accounts';
 import { Order, barOrder } from '../../containers/pages/Orders'
 import { Notivikasi, barNotiv } from '../../containers/pages/Notifications'
+import BelumBayar from '../../containers/pages/Accounts/PesananSaya/BelumBayar'
+import Dikemas from '../../containers/pages/Accounts/PesananSaya/Dikemas'
+import Dikirim from '../../containers/pages/Accounts/PesananSaya/Dikirim'
+import Selesai from '../../containers/pages/Accounts/PesananSaya/Selesai'
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import TOB from './Tobtab';
+import Tabb from './Tobtab'
 
 
 // Stack Navigatior
@@ -37,6 +41,11 @@ function Router() {
         <Stack.Screen name="PesananSaya" component={PesananSaya} />
         <Stack.Screen name="TOB" component={TOB} />
         <Stack.Screen name="NavTopTab" component={NavTobTab} />
+        <Stack.Screen name="BelumBayar" component={BelumBayar} />
+        <Stack.Screen name="Dikemas" component={Dikemas} />
+        <Stack.Screen name="Dikirim" component={Dikirim} />
+        <Stack.Screen name="Selesai" component={Selesai} />
+        <Stack.Screen name="Tabb" component={Tabb} />
       </Stack.Navigator>
     </NavigationContainer>
   );

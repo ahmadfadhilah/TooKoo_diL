@@ -1,13 +1,12 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import Tabb from '../../../../config/router/Tabb'
 
-const PesananSaya = () => {
-    return(
-        <View>
-            <Text>ape </Text>
-        </View>
+const index = () => {
+    return (
+        <Tabb />
     )
 }
-export default PesananSaya
+
+export default index
+
 
