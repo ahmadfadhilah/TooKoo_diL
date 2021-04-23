@@ -1,12 +1,12 @@
 import React from 'react'
-import Tabb from '../../../../config/router/Tabb'
+import { View, Text } from 'react-native'
 
-const index = () => {
+const PesananSaya = () => {
     return (
-        <Tabb />
+        <View>
+            <Text></Text>
+        </View>
     )
 }
 
-export default index
-
-
+export default PesananSaya

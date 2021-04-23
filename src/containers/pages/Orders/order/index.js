@@ -1,12 +1,9 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React from 'react'
+import TobOrders from '../../../../config/router/TobtabOrder'
 
-export default class Order extends Component {
-    render() {
-        return (
-            <View>
-                <Text> Order </Text>
-            </View>
-        )
-    }
+function Order() {
+    return (
+        <TobOrders />
+    )
 }
+export default Order

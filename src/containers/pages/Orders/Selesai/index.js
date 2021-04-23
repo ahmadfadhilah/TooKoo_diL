@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-export default function Dikemas() {
+export default function Selesai() {
     return (
         <View>
-            <Text>gek Dikemas</Text>
+            <Text></Text>
         </View>
     )
 }

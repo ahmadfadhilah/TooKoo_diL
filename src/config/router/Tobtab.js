@@ -1,10 +1,7 @@
 import *as React from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { Login, Register } from '../../containers/pages/Registrasions';
-import BelumBayar from '../../containers/pages/Accounts/PesananSaya/BelumBayar';
-import Dikemas from '../../containers/pages/Accounts/PesananSaya/Dikemas';
-import Dikirim from '../../containers/pages/Accounts/PesananSaya/Dikirim';
-import Selesai from '../../containers/pages/Accounts/PesananSaya/Selesai';
+import Animated from 'react-native-reanimated';
 
 // Tob Tab Register
 const TopTab = createMaterialTopTabNavigator();
@@ -14,8 +11,8 @@ function TOB() {
     <TopTab.Navigator
       tabBarOptions={{
         activeTinyColor: "black",
-        labelStyle: {fontSize: 15, fontWeight: 'bold'},
-        style: {backgroundColor: 'white', },
+        labelStyle: {fontSize: 15, fontWeight: 'bold',},
+        style: {backgroundColor: 'white',},
       }}
       
       >

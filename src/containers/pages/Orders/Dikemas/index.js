@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-export default function BelumBayar() {
+export default function Dikemas() {
     return (
         <View>
-            <Text>Bayar woi</Text>
+            <Text></Text>
         </View>
     )
 }
