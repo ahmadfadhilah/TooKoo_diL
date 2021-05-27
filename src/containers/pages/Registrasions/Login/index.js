@@ -20,7 +20,7 @@ export default class Login extends Component {
   }
 
   gotoForgotPw() {
-    this.props.navigation.navigate('ForgotPw');
+    this.props.navigation.navigate('ForgotPw');me
   }
 
   gotoHome() {

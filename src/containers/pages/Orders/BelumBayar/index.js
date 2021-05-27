@@ -58,18 +58,3 @@ export default function BelumBayar() {
   );
 }
 
-// import React from 'react'
-// import { View, Text } from 'react-native'
-// import LottieView from 'react-native-lootie'
-
-// export default function BelumBayar() {
-//     return (
-//         <View>
-//             <View>
-//             {/* <LottieView source={require('../../../../assets/Lottie/33810-payments.json')} autoPlay loop
-//             style={{height: 20, width: 20}}
-//             />; */}
-//             </View>
-//         </View>
-//     )
-// }
