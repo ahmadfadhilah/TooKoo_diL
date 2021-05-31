@@ -30,7 +30,7 @@ export default class Register extends Component {
 
     //post json
     var dataToSend = {
-      name: name,
+      username: name,
       email: email,
       password: password,
       password_confirmation: password_confirmation,

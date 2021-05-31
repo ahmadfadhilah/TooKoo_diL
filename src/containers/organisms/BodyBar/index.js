@@ -11,7 +11,7 @@ export class BodyBar extends Component {
                 <Image source={require('../../../assets/icon/add.png')} style={{marginRight: 130}}/>
                 <Text style={{fontSize: 16, fontWeight: 'bold', color: 'white'}}>Rp 999.999</Text>
               </View>
-              <View style={{flexDirection: 'row', paddingTop: 20, paddingBottom: 14, backgroundColor: '#0575E6', borderBottomLeftRadius: 4, borderBottomRightRadius: 4}}>
+              <View style={{flexDirection: 'row', paddingTop: 20, paddingBottom: 14, backgroundColor: '#0575E6', borderBottomLeftRadius: 4, borderBottomRightRadius: 4, marginBottom: 15}}>
                 <BodyBarIcon body="bayar" img={require('../../../assets/icon/donation.png')}/>
                 <BodyBarIcon body="kemas" img={require('../../../assets/icon/box.png')}/>
                 <BodyBarIcon body="kirim" img={require('../../../assets/icon/send.png')}/>
