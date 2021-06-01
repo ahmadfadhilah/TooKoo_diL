@@ -44,8 +44,8 @@ export default class Account extends Component {
                         <TouchableOpacity onPress={() => this.gotoProfile()}>
                         <Image source={require('../../../../assets/icon/profile.png')} style={styles.userImg}/>
                         </TouchableOpacity>
-                        <Text style={styles.userText}>StevenAsep</Text>
-                        <Text style={styles.userText1}>StevenAsep000@gmail.com</Text>
+                        <Text style={styles.userText}>Edit Profile</Text>
+                        <Text style={styles.userText1}>Masukkan gmail </Text>
                     </View>
                 </View>
                 {/* bar section */}

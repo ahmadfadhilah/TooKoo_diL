@@ -4,7 +4,7 @@ import {View, Text, Image, TouchableOpacity} from 'react-native';
 const BoxProduct = props => {
   return (
     <View style={{padding: 16, paddingBottom: 0}}>
-      <View style={{position: 'relative'}}>
+      <TouchableOpacity style={{position: 'relative'}}>
         <Image
           source={require('../../../assets/icon/25.webp')}
           style={{height: 170, width: '100%', borderRadius: 6}}
@@ -23,13 +23,13 @@ const BoxProduct = props => {
         <View
           style={{
             height: 30,
-            width: 55,
+            width: 115,
             position: 'absolute',
             top: 16,
             left: 16,
           }}>
           <Image
-            source={require('../../../assets/icon/gambar.jpeg')}
+            source={require('../../../assets/icon/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -57,34 +57,16 @@ const BoxProduct = props => {
                 color: 'white',
                 marginBottom: 8,
               }}>
-              Yuk berkunjung
+              Jordan X Paris
             </Text>
             <Text style={{fontSize: 12, fontWeight: '400', color: 'white'}}>
-              Mumpung ada lagi promo disini
+              Discover the latest of the collection
             </Text>
           </View>
           <View style={{flex: 1, paddingLeft: 14}}>
-            <TouchableOpacity
-              style={{
-                backgroundColor: 'green',
-                paddingHorizontal: 12,
-                paddingVertical: 11,
-                alignSelf: 'stretch',
-                borderRadius: 5,
-              }}>
-              <Text
-                style={{
-                  fontSize: 10,
-                  fontWeight: 'bold',
-                  color: 'white',
-                  textAlign: 'center',
-                }}>
-                Clime{' '}
-              </Text>
-            </TouchableOpacity>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
       <View
         style={{
           borderBottomColor: 'grey',
@@ -93,7 +75,7 @@ const BoxProduct = props => {
           marginnTop: 20,
         }}></View>
 
-      <View style={{position: 'relative'}}>
+      <TouchableOpacity style={{position: 'relative'}}>
         <Image
           source={require('../../../assets/icon/wkwk.png')}
           style={{height: 170, width: '100%', borderRadius: 6}}
@@ -112,13 +94,13 @@ const BoxProduct = props => {
         <View
           style={{
             height: 30,
-            width: 55,
+            width: 115,
             position: 'absolute',
             top: 16,
             left: 16,
           }}>
           <Image
-            source={require('../../../assets/icon/gambar.jpeg')}
+            source={require('../../../assets/icon/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -146,34 +128,16 @@ const BoxProduct = props => {
                 color: 'white',
                 marginBottom: 8,
               }}>
-              Yuk berkunjung
+              Skate Shoe
             </Text>
             <Text style={{fontSize: 12, fontWeight: '400', color: 'white'}}>
-              Mumpung ada lagi promo disini
+              Nike SB Zoom Blazer Premium
             </Text>
           </View>
           <View style={{flex: 1, paddingLeft: 14}}>
-            <TouchableOpacity
-              style={{
-                backgroundColor: 'green',
-                paddingHorizontal: 12,
-                paddingVertical: 11,
-                alignSelf: 'stretch',
-                borderRadius: 5,
-              }}>
-              <Text
-                style={{
-                  fontSize: 10,
-                  fontWeight: 'bold',
-                  color: 'white',
-                  textAlign: 'center',
-                }}>
-                Clime{' '}
-              </Text>
-            </TouchableOpacity>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
       <View
         style={{
           borderBottomColor: 'grey',
@@ -182,7 +146,7 @@ const BoxProduct = props => {
           marginnTop: 20,
         }}></View>
 
-      <View style={{position: 'relative'}}>
+      <TouchableOpacity style={{position: 'relative'}}>
         <Image
           source={require('../../../assets/icon/22.webp')}
           style={{height: 170, width: '100%', borderRadius: 6}}
@@ -201,13 +165,13 @@ const BoxProduct = props => {
         <View
           style={{
             height: 30,
-            width: 55,
+            width: 115,
             position: 'absolute',
             top: 16,
             left: 16,
           }}>
           <Image
-            source={require('../../../assets/icon/gambar.jpeg')}
+            source={require('../../../assets/icon/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -235,34 +199,16 @@ const BoxProduct = props => {
                 color: 'white',
                 marginBottom: 8,
               }}>
-              Yuk berkunjung
+              Nike Air Pegasus
             </Text>
             <Text style={{fontSize: 12, fontWeight: '400', color: 'white'}}>
-              Mumpung ada lagi promo disini
+              A Ma Maniere-Raised by woman
             </Text>
           </View>
           <View style={{flex: 1, paddingLeft: 14}}>
-            <TouchableOpacity
-              style={{
-                backgroundColor: 'green',
-                paddingHorizontal: 12,
-                paddingVertical: 11,
-                alignSelf: 'stretch',
-                borderRadius: 5,
-              }}>
-              <Text
-                style={{
-                  fontSize: 10,
-                  fontWeight: 'bold',
-                  color: 'white',
-                  textAlign: 'center',
-                }}>
-                Clime{' '}
-              </Text>
-            </TouchableOpacity>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
       <View
         style={{
           borderBottomColor: 'grey',
@@ -271,7 +217,7 @@ const BoxProduct = props => {
           marginnTop: 20,
         }}></View>
 
-      <View style={{position: 'relative'}}>
+      <TouchableOpacity style={{position: 'relative'}}>
         <Image
           source={require('../../../assets/icon/21.jpg')}
           style={{height: 170, width: '100%', borderRadius: 6}}
@@ -290,13 +236,13 @@ const BoxProduct = props => {
         <View
           style={{
             height: 30,
-            width: 55,
+            width: 115,
             position: 'absolute',
             top: 16,
             left: 16,
           }}>
           <Image
-            source={require('../../../assets/icon/gambar.jpeg')}
+            source={require('../../../assets/icon/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -324,34 +270,16 @@ const BoxProduct = props => {
                 color: 'white',
                 marginBottom: 8,
               }}>
-              Yuk berkunjung
+              Air Jordan Mid
             </Text>
             <Text style={{fontSize: 12, fontWeight: '400', color: 'white'}}>
-              Mumpung ada lagi promo disini
+              Air Max Pre-Day: liquid time   .
             </Text>
           </View>
           <View style={{flex: 1, paddingLeft: 14}}>
-            <TouchableOpacity
-              style={{
-                backgroundColor: 'green',
-                paddingHorizontal: 12,
-                paddingVertical: 11,
-                alignSelf: 'stretch',
-                borderRadius: 5,
-              }}>
-              <Text
-                style={{
-                  fontSize: 10,
-                  fontWeight: 'bold',
-                  color: 'white',
-                  textAlign: 'center',
-                }}>
-                Clime{' '}
-              </Text>
-            </TouchableOpacity>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
       <View
         style={{
           borderBottomColor: 'grey',

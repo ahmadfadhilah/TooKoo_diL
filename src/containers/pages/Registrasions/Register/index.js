@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import {
   Text,
   View,
-  StyleSheet,
-  Image,
   TextInput,
   StatusBar,
   TouchableOpacity,
@@ -15,6 +13,7 @@ export default class Register extends Component {
     super();
     this.state = {
       name: '',
+      username: '',
       email: '',
       password: '',
       password_confirmation: '',
@@ -26,11 +25,12 @@ export default class Register extends Component {
   }
 
   Register() {
-    const {name, email, password, password_confirmation} = this.state;
+    const {name ,username, email, password, password_confirmation} = this.state;
 
     //post json
     var dataToSend = {
-      username: name,
+      name: name,
+      username: username,
       email: email,
       password: password,
       password_confirmation: password_confirmation,
@@ -60,10 +60,9 @@ export default class Register extends Component {
         console.log(responseJson);
         const {token} = responseJson;
         if (token) {
-          alert('Sukses Login');
           this.gotoLogin();
         } else {
-          alert('coba mata nya digunain');
+          alert('coba di cek lagi');
         }
       })
 
@@ -100,6 +99,21 @@ export default class Register extends Component {
                   marginBottom: 17,
                 }}
                 onChangeText={name => this.setState({name})}
+              />
+              <TextInput
+                placeholder="username"
+                style={{
+                  borderWidth: 2,
+                  borderColor: '#E8E8E8',
+                  borderRadius: 25,
+                  height: 38,
+                  fontSize: 14,
+                  paddingLeft: 40,
+                  paddingRight: 20,
+                  backgroundColor: 'white',
+                  marginBottom: 17,
+                }}
+                onChangeText={username => this.setState({username})}
               />
               <TextInput
                 placeholder="email"
@@ -164,7 +178,7 @@ export default class Register extends Component {
                     width: '90%',
                     height: 38,
                     alignSelf: 'center',
-                    marginTop: 23,
+                    marginTop: 16,
                     justifyContent: 'center',
                     padding: 5,
                     color: 'black',
@@ -177,7 +191,7 @@ export default class Register extends Component {
               style={{
                 flexDirection: 'row',
                 justifyContent: 'center',
-                marginTop: 60,
+                marginTop: 40,
               }}>
               <Icongoogle
                 name="facebook"
