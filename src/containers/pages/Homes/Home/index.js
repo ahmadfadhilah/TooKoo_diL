@@ -14,7 +14,7 @@ export class Home extends Component {
     return (
       <View style={{flex: 1}}>
         <ScrollView style={{flex: 1, backgroundColor: 'white'}}>
-          <SeacrhBar onPress={() => this.props.navigation.navigate('Message')}/>
+          <SeacrhBar  onPress={() => this.props.navigation.navigate('Message')}/>
           <BodyBar />
           <View style={{height: 12, backgroundColor: '#F2F2F2'}}></View>
           <NewsSection onPress={() => this.props.navigation.navigate('NewsDetail')}/>
@@ -23,7 +23,6 @@ export class Home extends Component {
           <ScrolProduct />
           <BoxProduct />
         </ScrollView>
-
         {/* <Modal transparent visible={true}>
           <View style={{height: 50, width: 50, backgroundColor: 'red', alignItems: 'center', flex: 1, justifyContent: 'center'}}></View>
         </Modal> */}
@@ -33,3 +32,4 @@ export class Home extends Component {
 }
 
 export default Home;
+
