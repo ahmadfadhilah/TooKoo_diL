@@ -62,53 +62,6 @@ export default class SettingAccount extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal}>
-                    <Text style={styles.nameText}>Alamat Saya</Text>
-                    <Icon name="keyboard-arrow-right" size={25} style={{bottom: 2, paddingRight: 12}}/>
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal}>
-                    <Text style={styles.nameText}>Alamat Saya</Text>
-                    <Icon name="keyboard-arrow-right" size={25} style={{bottom: 2, paddingRight: 12}}/>
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal1}>
-                    <Text style={styles.nameText}>Kartu Rekening Saya</Text>
-                    <Icon name="keyboard-arrow-right" size={25} style={{bottom: 2, paddingRight: 12}}/>
-                    </TouchableOpacity>
-                </View>
-                {/* border */}
-                <View style={styles.border}>
-                    <Text style={styles.textborder}>Pengaturan</Text>
-                </View>
-                {/* fiture */}
-                <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal}>
-                    <Text style={styles.nameText}>Profil Saya</Text>
-                    <Icon name="keyboard-arrow-right" size={25} style={{bottom: 2, paddingRight: 12}}/>
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal}>
-                    <Text style={styles.nameText}>Alamat Saya</Text>
-                    <Icon name="keyboard-arrow-right" size={25} style={{bottom: 2, paddingRight: 12}}/>
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal}>
-                    <Text style={styles.nameText}>Alamat Saya</Text>
-                    <Icon name="keyboard-arrow-right" size={25} style={{bottom: 2, paddingRight: 12}}/>
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.name}>
-                    <TouchableOpacity style={styles.namehal}>
-                    <Text style={styles.nameText}>Alamat Saya</Text>
-                    <Icon name="keyboard-arrow-right" size={25} style={{bottom: 2, paddingRight: 12}}/>
-                    </TouchableOpacity>
-                </View>
-                <View style={styles.name}>
                     <TouchableOpacity style={styles.namehal1}>
                     <Text style={styles.nameText}>Kartu Rekening Saya</Text>
                     <Icon name="keyboard-arrow-right" size={25} style={{bottom: 2, paddingRight: 12}}/>

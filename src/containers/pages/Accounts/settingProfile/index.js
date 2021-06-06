@@ -13,8 +13,34 @@ import Phone from 'react-native-vector-icons/Feather'
 import Email from 'react-native-vector-icons/Fontisto'
 
 export default class SettingProfile extends Component {
+  constructor() {
+    super();
+    this.state = {
+      first_name: '',
+      last_name: '',
+      phone: '',
+      email: '',
+      gender: '',
+      born: '',
+    }
+  }
+
   gotoAccount() {
     this.props.navigation.navigate('Account')
+  }
+
+  EditProfile = () => {
+    const {first_name, last_name, phone, email, gender, born} = this.state;
+    const data = {
+      first_name: first_name,
+      last_name: last_name,
+      phone: phone,
+      email: email,
+      gender: gender,
+      born: born,
+      _method: 'PUT'
+    };
+    this.setState({loading: true});
   }
 
   render() {

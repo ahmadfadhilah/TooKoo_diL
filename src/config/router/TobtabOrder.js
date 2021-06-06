@@ -16,7 +16,7 @@ function TobOrders() {
         }}
         >
         <TobOrder.Screen 
-        name="BelumBayar" 
+        name="Bayar" 
         component={BelumBayar}
         
         />
