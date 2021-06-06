@@ -32,10 +32,13 @@ export default class Login extends Component {
   }
 
   Login = () => {
-    const {email, password} = this.state;
+    const {username, password} = this.state;
 
     // POST json
-    var dataToSend = {email: email, password: password};
+    var dataToSend = {
+      username: username,
+      password: password
+    };
     // making data to send on server
     var formBody = [];
     for (var key in dataToSend) {
@@ -77,13 +80,7 @@ export default class Login extends Component {
       <>
         <StatusBar translucent backgroundColor="transparent" />
         <View style={{flex: 1, backgroundColor: 'white'}}>
-          {/* <View style={{alignItems: 'center'}}>
-                    <Image source={require('../../../../assets/icon/gam.jpg')} style={{width: '100%', height: 210}}/>
-                </View> */}
-
           <View style={{backgroundColor: 'white'}}>
-            {/* <View style={{top: -20, borderTopLeftRadius: 35, borderTopRightRadius: 35, alignItems: 'center', backgroundColor: 'white', height: 20}}></View>
-                        <Text style={{fontSize: 18, fontWeight: 'bold', alignSelf: 'center', top: -37, borderBottomWidth: 1.7, borderBottomColor: '#FFFF00', paddingBottom: 5, paddingHorizontal: 35}}>Sign In</Text> */}
             <View style={{marginHorizontal: 25, marginTop: 80}}>
               <TextInput
                 placeholder="Email"
@@ -98,7 +95,7 @@ export default class Login extends Component {
                   backgroundColor: 'white',
                   marginBottom: 15,
                 }}
-                onChangeText={email => this.setState({email})}
+                onChangeText={username => this.setState({username})}
               />
               <TextInput
                 placeholder="Password"

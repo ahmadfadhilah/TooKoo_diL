@@ -12,7 +12,7 @@ export default class Register extends Component {
   constructor() {
     super();
     this.state = {
-      name: '',
+      first_name: '',
       username: '',
       email: '',
       password: '',
@@ -25,11 +25,11 @@ export default class Register extends Component {
   }
 
   Register() {
-    const {name ,username, email, password, password_confirmation} = this.state;
+    const {first_name ,username, email, password, password_confirmation} = this.state;
 
     //post json
     var dataToSend = {
-      name: name,
+      first_name: first_name,
       username: username,
       email: email,
       password: password,
@@ -62,7 +62,7 @@ export default class Register extends Component {
         if (token) {
           this.gotoLogin();
         } else {
-          alert('coba di cek lagi');
+          alert('Berhasil');
         }
       })
 
@@ -77,13 +77,7 @@ export default class Register extends Component {
       <>
         <StatusBar translucent backgroundColor="transparent" />
         <View style={{flex: 1, backgroundColor: 'white'}}>
-          {/* <View style={{alignItems: 'center'}}>
-                    <Image source={require('../../../../assets/icon/gam.jpg')} style={{width: '100%', height: 210}}/>
-                </View> */}
-
           <View style={{backgroundColor: 'white'}}>
-            {/* <View style={{top: -20, borderTopLeftRadius: 35, borderTopRightRadius: 35, alignItems: 'center', backgroundColor: 'white', height: 20}}></View>
-                        <Text style={{fontSize: 18, fontWeight: 'bold', alignSelf: 'center', top: -37, borderBottomWidth: 1.7, borderBottomColor: '#FFFF00', paddingBottom: 5, paddingHorizontal: 35}}>Sign up</Text> */}
             <View style={{marginHorizontal: 25, marginTop: 6}}>
               <TextInput
                 placeholder="name"
@@ -98,7 +92,7 @@ export default class Register extends Component {
                   backgroundColor: 'white',
                   marginBottom: 17,
                 }}
-                onChangeText={name => this.setState({name})}
+                onChangeText={first_name => this.setState({first_name})}
               />
               <TextInput
                 placeholder="username"
