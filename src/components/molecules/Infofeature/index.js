@@ -11,7 +11,7 @@ const NewsBar = () => {
         <Text style={{fontSize: 18, fontWeight: 'bold', marginTop: 15, marginBottom: 18}}>Nike.Just Do It. Nike ID</Text>
         <View style={{flexDirection: 'row', marginBottom: 16}}>
           <View>
-            <Image source={require('../../../assets/icon/nike.jpeg')} style={{width: 100, height: 110, borderRadius: 3}}/>
+            <Image source={require('../../../assets/icon/nike.jpeg')} style={{width: 100, height: 100, borderRadius: 3}}/>
           </View>
           <View style={{marginLeft: 16, flex: 1}}>
             <Text style={{fontSize: 15, color: '#2E2E2E', fontWeight: 'bold'}}>Free Delivery</Text>

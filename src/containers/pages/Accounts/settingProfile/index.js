@@ -26,7 +26,7 @@ export default class SettingProfile extends Component {
   }
 
   gotoAccount() {
-    this.props.navigation.navigate('Account');
+    this.props.navigation.goBack();
   }
 
   EditProfile = () => {
@@ -40,7 +40,8 @@ export default class SettingProfile extends Component {
       born_date: born_date,
       _method: 'PUT',
     };
-    this.setState({loading: true});
+    this.setState({loading: true, loading: false});
+    alert('Berhasil dirubah')
   };
 
   render() {
@@ -105,7 +106,7 @@ export default class SettingProfile extends Component {
             <TextInput
               style={Styles.Input}
               placeholder="Phone"
-              onChangeText={() => this.setState({phone: text})}
+              onChangeText={(text) => this.setState({phone: text})}
             />
           </View>
         </View>
@@ -119,7 +120,7 @@ export default class SettingProfile extends Component {
             <TextInput
               style={Styles.Input}
               placeholder="Gender"
-              onChangeText={() => this.setState({gender: text})}
+              onChangeText={(text) => this.setState({gender: text})}
             />
           </View>
         </View>
@@ -145,8 +146,7 @@ export default class SettingProfile extends Component {
             <ActivityIndicator size={'large'} color="skyblue" />
           ) : (
             <Text style={Styles.submittext}>Submit</Text>
-          )} 
-            
+          )}      
           </TouchableOpacity>
         </View>
       </View>

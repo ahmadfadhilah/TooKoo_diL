@@ -27,8 +27,8 @@ export default class Login extends Component {
     this.props.navigation.navigate('Home');
   }
 
-  gotoRegister() {
-    this.props.navigation.navigate('Register');
+  gotoPembeda() {
+    this.props.navigation.navigate('Pembeda');
   }
 
   Login = () => {

@@ -16,20 +16,22 @@ export default class Pembeda extends Component {
         AsyncStorage.getItem('token')
         .then((token) => {
             if (token!=null) {
-                this.setState({token: token});
+                this.setState({ token: token })
             } else {
                 console.log('Tidak ada cuy tokennya')
             }
         })
     }
 
+    
+    
     render() {
         return (
             <>
                {this.token!=null ? (
-                   <NotAccount {...this.props}/>
-               ):(
                    <Account {...this.props}/>
+               ):(
+                   <NotAccount {...this.props}/>
                )}
             </>
         )

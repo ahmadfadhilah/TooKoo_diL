@@ -60,16 +60,16 @@ export default class Register extends Component {
         console.log(responseJson);
         const {token} = responseJson;
         if (token) {
-          this.gotoLogin();
         } else {
-          alert('salah tulis');
+          this.gotoLogin();
+          alert('Berhasil');
         }
       })
 
       //if response is not in json then in error
       .catch(error => {
         this.gotoLogin();
-        alert('Berhasil');
+        // alert('Berhasil');
       });
   }
 
