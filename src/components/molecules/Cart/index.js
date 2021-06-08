@@ -51,9 +51,21 @@ const Keranjang = () => {
             <Text style={Styles.catatantext1}>View Product Details</Text>
         </View>
       </View>
+      <View style={{height: 54, flexDirection: 'row', backgroundColor: 'skyblue', marginTop: 48}}>
+          <View style={{alignItems: 'center', justifyContent: 'center', marginLeft: 30}}>
+            <Image style={{width: 26, height: 26}} source={require("../../../assets/icon/mail.png")}/>
+          </View>
+          <View style={{alignItems: 'center', justifyContent: 'center', marginLeft: 50 }}>
+            <Image style={{width: 26, height: 26}} source={require("../../../assets/icon/order.png")}/>
+          </View>
+          <View style={{alignItems: 'center', justifyContent: 'center', marginLeft: 50, backgroundColor: '#FF2511'}}>
+          <Text style={{fontSize: 16, color: 'skyblue', marginTop: 4, paddingLeft: 40, paddingRight: 51, fontWeight: '700'}}>Beli Sekarang</Text>
+          </View>
+        </View>
     </View>
   );
 };
+
 export default Keranjang;
 
 const Styles = StyleSheet.create({

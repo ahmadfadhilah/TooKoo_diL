@@ -14,7 +14,7 @@ export class Home extends Component {
     return (
       <View style={{flex: 1}}>
         <ScrollView style={{flex: 1, backgroundColor: 'white'}}>
-          <SeacrhBar  onPress={() => this.props.navigation.navigate('Message')}/>
+          <SeacrhBar onPress={() => this.props.navigation.navigate('Keranjang')}/>
           <BodyBar />
           <View style={{height: 12, backgroundColor: '#F2F2F2'}}></View>
           <NewsSection onPress={() => this.props.navigation.navigate('NewsDetail')}/>

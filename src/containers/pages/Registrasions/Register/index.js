@@ -62,13 +62,14 @@ export default class Register extends Component {
         if (token) {
           this.gotoLogin();
         } else {
-          alert('Berhasil');
+          alert('salah tulis');
         }
       })
 
       //if response is not in json then in error
       .catch(error => {
-        alert('diliat form lu cuk');
+        this.gotoLogin();
+        alert('Berhasil');
       });
   }
 

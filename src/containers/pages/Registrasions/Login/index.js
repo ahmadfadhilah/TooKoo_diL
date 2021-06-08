@@ -83,7 +83,7 @@ export default class Login extends Component {
           <View style={{backgroundColor: 'white'}}>
             <View style={{marginHorizontal: 25, marginTop: 80}}>
               <TextInput
-                placeholder="Email"
+                placeholder="Username"
                 style={{
                   borderWidth: 2,
                   borderColor: '#E8E8E8',

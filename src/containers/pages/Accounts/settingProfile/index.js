@@ -6,11 +6,12 @@ import {
   TouchableOpacity,
   Image,
   TextInput,
+  ActivityIndicator,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import User from 'react-native-vector-icons/FontAwesome';
-import Phone from 'react-native-vector-icons/Feather'
-import Email from 'react-native-vector-icons/Fontisto'
+import Phone from 'react-native-vector-icons/Feather';
+import Email from 'react-native-vector-icons/Fontisto';
 
 export default class SettingProfile extends Component {
   constructor() {
@@ -18,38 +19,39 @@ export default class SettingProfile extends Component {
     this.state = {
       first_name: '',
       last_name: '',
-      phone: '',
-      email: '',
+      nohape: '',
       gender: '',
-      born: '',
-    }
+      born_date: '',
+    };
   }
 
   gotoAccount() {
-    this.props.navigation.navigate('Account')
+    this.props.navigation.navigate('Account');
   }
 
   EditProfile = () => {
-    const {first_name, last_name, phone, email, gender, born} = this.state;
+    const {first_name, last_name, nohape, gender, born_date} = this.state;
+    const url = 'https://tookoodil.herokuapp.com/api/profile/%7Bid%7D';
     const data = {
       first_name: first_name,
       last_name: last_name,
-      phone: phone,
-      email: email,
+      nohape: nohape,
       gender: gender,
-      born: born,
-      _method: 'PUT'
+      born_date: born_date,
+      _method: 'PUT',
     };
     this.setState({loading: true});
-  }
+  };
 
   render() {
     return (
       <View style={Styles.container}>
         {/* head */}
         <View style={Styles.header}>
-          <TouchableOpacity style={Styles.icons} onPress={() => this.gotoAccount()}>
-            <Icon name="arrow-back-ios" size={23} style={Styles.icon}/>
+          <TouchableOpacity
+            style={Styles.icons}
+            onPress={() => this.gotoAccount()}>
+            <Icon name="arrow-back-ios" size={23} style={Styles.icon} />
             <Text style={Styles.texticon}>Back</Text>
           </TouchableOpacity>
           <View style={Styles.texts}>
@@ -67,44 +69,84 @@ export default class SettingProfile extends Component {
         {/* Body 1 */}
         <View style={Styles.HalInput}>
           <View style={Styles.TextInput}>
-            <User name='user-o' size={23} style={{paddingLeft: 4, paddingTop: 12, paddingRight: 8}}/>
-            <TextInput style={Styles.Input} placeholder="First name"/>
+            <User
+              name="user-o"
+              size={23}
+              style={{paddingLeft: 4, paddingTop: 12, paddingRight: 8}}
+            />
+            <TextInput
+              style={Styles.Input}
+              placeholder="First name"
+              onChangeText={text => this.setState({first_name: text})}
+            />
           </View>
         </View>
         <View style={Styles.HalInput}>
           <View style={Styles.TextInput}>
-            <User name='user-o' size={23} style={{paddingLeft: 4, paddingTop: 12, paddingRight: 8}}/>
-            <TextInput style={Styles.Input} placeholder="Last name"/>
+            <User
+              name="user-o"
+              size={23}
+              style={{paddingLeft: 4, paddingTop: 12, paddingRight: 8}}
+            />
+            <TextInput
+              style={Styles.Input}
+              placeholder="Last name"
+              onChangeText={text => this.setState({last_name: text})}
+            />
           </View>
         </View>
         <View style={Styles.HalInput}>
           <View style={Styles.TextInput}>
-            <Phone name='phone' size={23} style={{paddingLeft: 4, paddingTop: 12, paddingRight: 7}}/>
-            <TextInput style={Styles.Input} placeholder="Phone"/>
+            <Phone
+              name="phone"
+              size={23}
+              style={{paddingLeft: 4, paddingTop: 12, paddingRight: 7}}
+            />
+            <TextInput
+              style={Styles.Input}
+              placeholder="Phone"
+              onChangeText={() => this.setState({phone: text})}
+            />
           </View>
         </View>
         <View style={Styles.HalInput}>
           <View style={Styles.TextInput}>
-            <Email name='email' size={23} style={{paddingLeft: 4, paddingTop: 12, paddingRight: 7}}/>
-            <TextInput style={Styles.Input} placeholder="Email"/>
+            <User
+              name="genderless"
+              size={23}
+              style={{paddingLeft: 4, paddingTop: 12, paddingRight: 13}}
+            />
+            <TextInput
+              style={Styles.Input}
+              placeholder="Gender"
+              onChangeText={() => this.setState({gender: text})}
+            />
           </View>
         </View>
         <View style={Styles.HalInput}>
           <View style={Styles.TextInput}>
-            <User name='genderless' size={23} style={{paddingLeft: 4, paddingTop: 12, paddingRight: 13}}/>
-            <TextInput style={Styles.Input} placeholder="Gender"/>
-          </View>
-        </View>
-        <View style={Styles.HalInput}>
-          <View style={Styles.TextInput}>
-            <Email name='date' size={23} style={{paddingLeft: 4, paddingTop: 12, paddingRight: 7}}/>
-            <TextInput style={Styles.Input} placeholder="Born & date"/>
+            <Email
+              name="date"
+              size={23}
+              style={{paddingLeft: 4, paddingTop: 12, paddingRight: 7}}
+            />
+            <TextInput
+              style={Styles.Input}
+              placeholder="Born & date"
+              onChangeText={text => this.setState({born_date: text})}
+            />
           </View>
         </View>
         {/* selesai */}
         <View style={Styles.submit}>
-          <TouchableOpacity>
+          <TouchableOpacity
+          onPress={() =>this.EditProfile()}>
+          {this.state.loading ? (
+            <ActivityIndicator size={'large'} color="skyblue" />
+          ) : (
             <Text style={Styles.submittext}>Submit</Text>
+          )} 
+            
           </TouchableOpacity>
         </View>
       </View>
@@ -159,19 +201,19 @@ const Styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: 'grey',
     marginHorizontal: 16,
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   submit: {
     marginHorizontal: 16,
     backgroundColor: 'red',
     borderRadius: 9,
-    marginTop: 25
+    marginTop: 25,
   },
   submittext: {
     textAlign: 'center',
     fontSize: 17,
     fontWeight: '900',
     margin: 7,
-    color: 'white'
-  }
+    color: 'white',
+  },
 });
