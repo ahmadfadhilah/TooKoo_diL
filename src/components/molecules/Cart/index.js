@@ -7,14 +7,14 @@ const Keranjang = () => {
   return (
     <View style={Styles.container}>
       <View style={Styles.head}>
+        <Image
+          source={require('../../../assets/icon/125.jpeg')}
+          style={Styles.image}
+        />
         <Icon
           name="chevron-back-circle-outline"
           size={33}
           style={Styles.icon}
-        />
-        <Image
-          source={require('../../../assets/icon/125.jpeg')}
-          style={Styles.image}
         />
       </View>
       <View>
@@ -44,8 +44,8 @@ const Keranjang = () => {
         <View style={Styles.catatan}>
             <Text style={Styles.catatantext}>
             Keeping the original ripple design inspired by Japanese bullet trains,
-            the Nike Air Max 97 lets you push your style full-speed ahead.We took the revolutionary 
-            full-length Nike Air unit that shook up the running world and added fresh denim textures and crisp 
+            the Nike Air Max 97 lets you push your style full-speed ahead.We took the revolutionary
+            full-length Nike Air unit that shook up the running world and added fresh denim textures and crisp
             detailing to help you ride in first-class comfort.
             </Text>
             <Text style={Styles.catatantext1}>View Product Details</Text>
@@ -78,6 +78,7 @@ const Styles = StyleSheet.create({
     height: 230,
     position: 'relative',
     flexDirection: 'row',
+    position: 'relative'
   },
   image: {
     width: '100%',
@@ -85,6 +86,8 @@ const Styles = StyleSheet.create({
   },
   icon: {
     position: 'absolute',
+    marginTop: 8,
+    marginLeft: 8
   },
   body: {
     marginTop: 73,

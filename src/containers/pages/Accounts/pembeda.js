@@ -29,9 +29,9 @@ export default class Pembeda extends Component {
         return (
             <>
                {this.token!=null ? (
-                   <Account {...this.props}/>
-               ):(
                    <NotAccount {...this.props}/>
+               ):(
+                   <Account {...this.props}/>
                )}
             </>
         )

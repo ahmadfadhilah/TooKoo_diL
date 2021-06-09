@@ -94,6 +94,3 @@ function Buttom() {
     </Tab.Navigator>
   );
 }
-
-
-

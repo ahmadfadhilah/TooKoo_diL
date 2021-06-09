@@ -1,11 +1,11 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import {View, Text} from 'react-native';
 
 function Message() {
-    return (
-        <View>
-            <Text>ap lo </Text>
-        </View>
-    )
+  return (
+    <View>
+      <Text>ap lo </Text>
+    </View>
+  );
 }
-export default Message
+export default Message;

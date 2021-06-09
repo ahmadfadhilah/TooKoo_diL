@@ -1,27 +1,3 @@
-// import React from 'react'
-// import { View, Text } from 'react-native'
-
-// const Selesai = () => {
-//   return (
-//     <View>
-//       <Text></Text>
-//     </View>
-//   )
-// }
-
-// export default Selesai
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { Component } from "react";
 import {
   SafeAreaView,
