@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { Home, Keranjang, Message, NewsDetail } from '../../containers/pages/Homes';
+import { Home, Keranjang, Message, NewsDetail, Chat, Kontak } from '../../containers/pages/Homes';
 import { Login, Register, ForgotPw, SplashScreen, NavTobTab } from '../../containers/pages/Registrasions'
 import { Account, NotAccount, SettingAccount, SettingProfile, Pembeda, PesananSaya } from '../../containers/pages/Accounts';
 import { Order, barOrder, BelumBayar, Dikemas, Dikirim, Selesai, NavTobOrder } from '../../containers/pages/Orders'
@@ -27,6 +27,8 @@ function Router() {
         <Stack.Screen name="NewsDetail" component={NewsDetail}/>
         <Stack.Screen name="Message" component={Message}/>
         <Stack.Screen name="Keranjang" component={Keranjang}/>
+        <Stack.Screen name="Chat" component={Chat}/>
+        <Stack.Screen name="Kontak" component={Kontak}/>
         {/* Order */}
         <Stack.Screen name="Order" component={Order} />
         <Stack.Screen name="BelumBayar" component={BelumBayar} />
