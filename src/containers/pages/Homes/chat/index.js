@@ -9,6 +9,5 @@ export class Chat extends Component {
             </View>
         )
     }
-}
-
+} 
 export default Chat

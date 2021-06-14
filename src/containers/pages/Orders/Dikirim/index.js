@@ -14,7 +14,7 @@ export default class Dikirim extends Component {
   toggleOpen = () => {
     Animated.timing(this.state.animation, {
       toValue: 1,
-      duration: 3000,
+      duration: 4000,
       useNativeDriver: true,
     }).start();
   };

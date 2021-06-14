@@ -10,7 +10,10 @@ import {
   Dimensions
 } from "react-native";
 
-const images = new Array(6).fill('https://images.unsplash.com/photo-1556740749-887f6717d7e4');
+// const images = new Array(6).fill('https://images.unsplash.com/photo-1556740749-887f6717d7e4');
+// bisa juga pakai ini
+const images = ['https://images.unsplash.com/photo-1556740749-887f6717d7e4', 'https://images.unsplash.com/photo-1556740749-887f6717d7e4', 'https://images.unsplash.com/photo-1556740749-887f6717d7e4', 'https://images.unsplash.com/photo-1556740749-887f6717d7e4']
+
 
 const window = Dimensions.get("window");
 
