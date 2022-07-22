@@ -24,10 +24,10 @@ export default class Dikemas extends React.Component {
     LayoutAnimation.spring();
     this.setState({w: this.state.w + 15, h: this.state.h + 15});
   };
-  _onPressme = () =>{
+  _onPressme = () => {
     // Animate Undo
     LayoutAnimation.spring();
-    this.setState({w: this.state.w -15, h: this.state.h - 15});
+    this.setState({w: this.state.w - 15, h: this.state.h - 15});
   };
 
   render() {
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue',
     paddingHorizontal: 20,
     paddingVertical: 15,
-    marginTop: 15
+    marginTop: 15,
   },
   buttonText: {
     color: '#fff',

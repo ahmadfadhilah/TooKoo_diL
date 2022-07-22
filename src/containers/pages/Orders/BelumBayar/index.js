@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image, Animated, PanResponder} from 'react-native';
+import {View, Text, Animated, PanResponder} from 'react-native';
 
 export default function BelumBayar() {
   const position = new Animated.ValueXY({x: 0, y: 0});
@@ -8,21 +8,21 @@ export default function BelumBayar() {
   const pan = PanResponder.create({
     onMoveShouldSetPanResponder: () => true,
 
-    onPanResponderMove: (e,gesture) => {                      //bisa pakai diatara dua ini
-      position.setValue({x:gesture.dx,y:gesture.dy})
+    onPanResponderMove: (e, gesture) => {
+      position.setValue({x: gesture.dx, y: gesture.dy});
     },
     // onPanResponderMove: Animated.event([
     //   null,
     //   {dx: position.x, dy: position.y},
-    // ]),                                                    //batesnya(sebagian besar pasti nemu pake ini)
+    // ]),
 
     onPanResponderRelease: () => {
       // position.setValue({x:0,y:0})
-      Animated.spring(position,{
-        toValue: {x:0,y:0},
+      Animated.spring(position, {
+        toValue: {x: 0, y: 0},
         useNativeDriver: true,
-      }).start()
-    }
+      }).start();
+    },
   });
 
   //1. interpolate over value
@@ -35,7 +35,7 @@ export default function BelumBayar() {
       style={{
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
       }}>
       <Animated.View
         {...pan.panHandlers}
@@ -57,4 +57,3 @@ export default function BelumBayar() {
     </View>
   );
 }
-

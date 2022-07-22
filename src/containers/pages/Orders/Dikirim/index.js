@@ -34,7 +34,7 @@ export default class Dikirim extends Component {
     return (
       <View style={styles.container}>
         <Animated.View
-          style={[styles.background, backgroundStyle]}></Animated.View>
+          style={[styles.background, styles.backgroundStyle]}></Animated.View>
 
         <TouchableWithoutFeedback onPress={this.toggleOpen}>
           <View style={styles.button}>
