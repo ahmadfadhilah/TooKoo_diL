@@ -1,10 +1,13 @@
-import React, {Component} from 'react';
-import Router from './src/config/router';
+import React from 'react';
+import {View} from 'react-native';
+import {Router} from './src/routers';
 
-export class App extends Component {
-  render() {
-    return <Router />;
-  }
-}
+const App = () => {
+  return (
+    <View>
+      <Router />
+    </View>
+  );
+};
 
 export default App;
