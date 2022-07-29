@@ -7,20 +7,13 @@ const TobChat = createMaterialTopTabNavigator();
 function Tobchat() {
   return (
     <TobChat.Navigator
-    tabBarOptions={{
-      activeTintColor: 'grey',
-      labelStyle: {fontSize: 15, fontWeight: '600', color: 'blue'},
-      style: {backgroundColor: 'white'}
-    }}
-    >
-      <TobChat.Screen 
-      name="Chat" 
-      component={Chat} 
-      />
-      <TobChat.Screen 
-      name="Kontak" 
-      component={Kontak} 
-      />
+      tabBarOptions={{
+        activeTintColor: 'grey',
+        labelStyle: {fontSize: 15, fontWeight: '600', color: 'blue'},
+        style: {backgroundColor: 'white'},
+      }}>
+      <TobChat.Screen name="Chat" component={Chat} />
+      <TobChat.Screen name="Kontak" component={Kontak} />
     </TobChat.Navigator>
   );
 }
