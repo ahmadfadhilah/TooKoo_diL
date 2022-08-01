@@ -26,7 +26,15 @@ import {
   pembeda,
   Pesanan,
 } from '../screens';
-import {Order, barOrder, BelumBayar, Dikirim, NavTobOrder} from '../screens';
+import {
+  Order,
+  barOrder,
+  BelumBayar,
+  Dikirim,
+  NavTobOrder,
+  Dikemas,
+  Selesai,
+} from '../screens';
 import {Notivikasi, barNotiv} from '../screens';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -54,6 +62,8 @@ function Router() {
         <Stack.Screen name="barOrder" component={barOrder} />
         <Stack.Screen name="BelumBayar" component={BelumBayar} />
         <Stack.Screen name="Dikirim" component={Dikirim} />
+        <Stack.Screen name="Dikirim" component={Selesai} />
+        <Stack.Screen name="Dikirim" component={Dikemas} />
         {/* Notivikasi */}
         <Stack.Screen name="Notivikasi" component={Notivikasi} />
         <Stack.Screen name="barNotiv" component={barNotiv} />

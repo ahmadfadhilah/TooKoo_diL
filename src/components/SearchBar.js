@@ -31,19 +31,19 @@ export class SearchBar extends Component {
             }}
           />
           <Image
-            source={require('../../../assets/icon/loupe.png')}
+            source={require('../assets/Icon/loupe.png')}
             style={{position: 'absolute', top: 8, left: 10}}
           />
         </View>
         <TouchableOpacity
           style={{width: 35, alignItems: 'center', justifyContent: 'center'}}
           onPress={() => this.props.history.navigate('Keranjang')}>
-          <Image source={require('../../../assets/icon/wwww.png')} />
+          <Image source={require('../assets/Icon/wwww.png')} />
         </TouchableOpacity>
         <TouchableOpacity
           style={{width: 35, alignItems: 'center', justifyContent: 'center'}}
           onPress={() => this.props.history.navigate('Message')}>
-          <Image source={require('../../../assets/icon/chat.png')} />
+          <Image source={require('../assets/Icon/chat.png')} />
         </TouchableOpacity>
       </View>
     );

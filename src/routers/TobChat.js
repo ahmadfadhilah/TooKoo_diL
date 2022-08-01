@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import {Chat, Kontak} from '../../containers/pages/Homes';
+import {Chat, Kontak} from '../screens';
 
 const TobChat = createMaterialTopTabNavigator();
 

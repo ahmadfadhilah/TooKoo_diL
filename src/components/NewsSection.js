@@ -5,10 +5,10 @@ const NewsSection= ({onPress}) => {
     return (
         <View style={{paddingTop: 18, paddingHorizontal: 16}}>
             <View style={{position: 'relative', }}>
-              <Image source={require('../../../assets/icon/haha.jpg')} style={{height: 170, width: '100%', borderRadius: 6}}/>
+              <Image source={require('../assets/Image/haha.jpg')} style={{height: 170, width: '100%', borderRadius: 6}}/>
               <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.2, borderRadius: 6}}></View>
               <View style={{height: 30, width: 115, position: 'absolute', top: 12, left: 16}}>
-                <Image source={require('../../../assets/icon/logo.jpg')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
+                <Image source={require('../assets/Image/logo.jpg')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}}/>
               </View>
             </View>
             <View style={{paddingTop: 14, paddingBottom: 20, borderBottomColor: 'grey', borderBottomWidth: 1}}>

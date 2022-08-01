@@ -1,9 +1,7 @@
-import React from 'react'
-import TobOrders from '../../../../config/router/TobtabOrder'
+import React from 'react';
+import TobOrders from '../../../routers/TobtabOrder';
 
 function Order() {
-    return (
-        <TobOrders />
-    )
+  return <TobOrders />;
 }
-export default Order
+export default Order;

@@ -1,11 +1,6 @@
 import * as React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import {
-  BelumBayar,
-  Dikemas,
-  Dikirim,
-  Selesai,
-} from '../../containers/pages/Orders';
+import {BelumBayar, Dikemas, Dikirim, Selesai} from '../screens';
 import Animated from 'react-native-reanimated';
 
 // TobTabOrder

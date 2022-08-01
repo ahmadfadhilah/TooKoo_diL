@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import React, {Component} from 'react';
 import {ActivityIndicator, StyleSheet, Text, View, Image} from 'react-native';
+import {LOGO} from '../../../assets';
 
 export default class SplashScreen extends Component {
   componentDidMount() {
@@ -35,7 +36,10 @@ export default class SplashScreen extends Component {
           />
         ))}
         <View style={Styles.head}>
-          <Image source={require('../../../../assets/icon/logo.jpg')} style={{width: 200, height: '22%', borderRadius: 4}}/>
+          <Image
+            source={require('../../../assets/Image/logo.jpg')}
+            style={{width: 200, height: '22%', borderRadius: 4}}
+          />
         </View>
         <ActivityIndicator size="large" color="red" />
       </View>
@@ -52,10 +56,10 @@ const Styles = StyleSheet.create({
     width: 200,
     height: '22%',
     borderRadius: 4,
-    position: 'absolute'
+    position: 'absolute',
   },
   head: {
     alignItems: 'center',
     paddingTop: 100,
-  }
+  },
 });

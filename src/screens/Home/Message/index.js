@@ -7,7 +7,7 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import Tobchat from '../../../../config/router/TobChat';
+import Tobchat from '../../../routers/TobChat';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export class Message extends Component {
@@ -39,7 +39,7 @@ export class Message extends Component {
               }}
             />
             <Image
-              source={require('../../../../assets/icon/loupe.png')}
+              source={require('../../../assets/Icon/loupe.png')}
               style={{position: 'absolute', top: 8, left: 23}}
             />
           </View>

@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {View, ScrollView, Modal} from 'react-native';
 
-import BenerBar from '../../../../components/molecules/Bannerfeature';
-import NewsBar from '../../../../components/molecules/Infofeature';
-import NewsSection from '../../../../components/molecules/NewsFeature';
-import SeacrhBar from '../../../../components/molecules/searchfeature';
-import BodyBar from '../../../../containers/organisms/BodyBar';
-import ScrolProduct from '../../../../containers/organisms/HorizontalProduct';
-import BoxProduct from '../../../../components/molecules/BoxProduct';
+import BenerBar from '../../../components/BenerBar';
+import NewsBar from '../../../components/NewsBar';
+import NewsSection from '../../../components/NewsSection';
+import SeacrhBar from '../../../components/SearchBar';
+import BodyBar from '../../../components/BodyBar/index';
+import ScrolProduct from '../../../components/Scrollitem';
+import BoxProduct from '../../../components/BoxProduct';
 
 export class Dashboard extends Component {
   constructor(props) {

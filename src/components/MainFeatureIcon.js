@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 
-const MainFeatureIcon = props => {
+const MainFeatureIcon = (props) => {
   return (
     <View style={{width: '25%', alignItems: 'center', marginBottom: 18}}>
       <View

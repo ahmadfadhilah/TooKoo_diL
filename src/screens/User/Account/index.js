@@ -42,7 +42,7 @@ export default class Account extends Component {
           <View style={styles.user}>
             <TouchableOpacity onPress={() => this.gotoProfile()}>
               <Image
-                source={require('../../../../assets/icon/profile.png')}
+                source={require('../../../assets/Image/profile.png')}
                 style={styles.userImg}
               />
             </TouchableOpacity>
@@ -146,7 +146,6 @@ const styles = StyleSheet.create({
     color: 'grey',
     paddingTop: 3,
   },
-
 
   name: {
     marginTop: 14,

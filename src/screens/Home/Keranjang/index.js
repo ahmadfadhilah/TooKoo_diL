@@ -31,7 +31,7 @@ export default class Keranjang extends Component {
           }}>
           <View>
             <Image
-              source={require('../../../../assets/icon/44.jpeg')}
+              source={require('../../../assets/Image/44.jpeg')}
               style={{width: 100, height: 100, borderRadius: 3}}
             />
           </View>
@@ -75,7 +75,7 @@ export default class Keranjang extends Component {
           }}>
           <View>
             <Image
-              source={require('../../../../assets/icon/45.png')}
+              source={require('../../../assets/Image/45.png')}
               style={{width: 100, height: 100, borderRadius: 3}}
             />
           </View>
@@ -119,7 +119,7 @@ export default class Keranjang extends Component {
           }}>
           <View>
             <Image
-              source={require('../../../../assets/icon/46.jpeg')}
+              source={require('../../../assets/Image/46.jpeg')}
               style={{width: 100, height: 100, borderRadius: 3}}
             />
           </View>
@@ -163,7 +163,7 @@ export default class Keranjang extends Component {
           }}>
           <View>
             <Image
-              source={require('../../../../assets/icon/44.jpeg')}
+              source={require('../../../assets/Image/44.jpeg')}
               style={{width: 100, height: 100, borderRadius: 3}}
             />
           </View>

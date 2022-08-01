@@ -16,6 +16,8 @@ import Dikirim from './Order/Dikirim';
 import NavTobOrder from './Order/NavTobOrder';
 import Order from './Order/Order';
 import barOrder from './Order/barOrder';
+import Selesai from './Order/Selesai';
+import Dikemas from './Order/Dikemas';
 import Account from './User/Account';
 import NotAccount from './User/NotAccount';
 import Pesanan from './User/Pesanan';
@@ -42,6 +44,8 @@ export {
   NavTobOrder,
   Order,
   barOrder,
+  Dikemas,
+  Selesai,
   Account,
   NotAccount,
   Pesanan,

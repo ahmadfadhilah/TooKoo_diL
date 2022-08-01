@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, Image} from 'react-native';
-import BodyBarIcon from '../../../components/molecules/bodybar';
+import BodyBarIcon from '../BodyBarIcon';
 
 export class BodyBar extends Component {
   render() {
@@ -19,7 +19,7 @@ export class BodyBar extends Component {
             Top Up
           </Text>
           <Image
-            source={require('../../../assets/icon/add.png')}
+            source={require('../../assets/Icon/add.png')}
             style={{marginRight: 130}}
           />
           <Text style={{fontSize: 16, fontWeight: 'bold', color: 'white'}}>
@@ -38,19 +38,19 @@ export class BodyBar extends Component {
           }}>
           <BodyBarIcon
             body="bayar"
-            img={require('../../../assets/icon/donation.png')}
+            img={require('../../assets/Icon/donation.png')}
           />
           <BodyBarIcon
             body="kemas"
-            img={require('../../../assets/icon/box.png')}
+            img={require('../../assets/Icon/box.png')}
           />
           <BodyBarIcon
             body="kirim"
-            img={require('../../../assets/icon/send.png')}
+            img={require('../../assets/Icon/send.png')}
           />
           <BodyBarIcon
             body="rating"
-            img={require('../../../assets/icon/star.png')}
+            img={require('../../assets/Icon/star.png')}
           />
         </View>
       </View>

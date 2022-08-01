@@ -40,7 +40,7 @@ export default class NotAccount extends Component {
           </View>
           <View style={styles.user}>
             <Image
-              source={require('../../../../assets/icon/user.png')}
+              source={require('../../../assets/Image/user.png')}
               style={styles.userImg}
             />
             <View style={styles.not}>

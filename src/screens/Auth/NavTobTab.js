@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {StatusBar, Text, Image, View} from 'react-native';
-import TOB from '../../../config/router/Tobtab';
+import {StatusBar, Image, View} from 'react-native';
+import TOB from '../../routers/Tobtab';
 
 export default class NavTobTab extends Component {
   render() {
@@ -9,7 +9,7 @@ export default class NavTobTab extends Component {
         <StatusBar translucent backgroundColor="transparent" />
         <View style={{alignItems: 'center'}}>
           <Image
-            source={require('../../../assets/icon/gam.jpg')}
+            source={require('../../assets/Image/gam.jpg')}
             style={{width: '100%', height: 200}}
           />
         </View>

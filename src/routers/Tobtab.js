@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import {Login, Register} from '../../containers/pages/Registrasions';
+import {Login, Register} from '../screens';
 import Animated from 'react-native-reanimated';
 
 // Tob Tab Register

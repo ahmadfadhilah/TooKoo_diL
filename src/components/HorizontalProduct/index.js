@@ -9,7 +9,7 @@ class ScrolProduct extends Component {
       <View style={{paddingTop: 16}}>
         <View style={{height: 30, width: 120, marginLeft: 16}}>
           <Image
-            source={require('../../../assets/icon/logo.jpg')}
+            source={require('../../assets/Image/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -37,37 +37,37 @@ class ScrolProduct extends Component {
           <TouchableOpacity>
             <Scrollitem
               title="Nike Air Max"
-              img={require('../../../assets/icon/44.jpeg')}
+              img={require('../../assets/Image/44.jpeg')}
             />
           </TouchableOpacity>
           <TouchableOpacity>
             <Scrollitem
               title="Air Jordan 11 PS"
-              img={require('../../../assets/icon/45.png')}
+              img={require('../../assets/Image/45.png')}
             />
           </TouchableOpacity>
           <TouchableOpacity>
             <Scrollitem
               title="Air Jordan 1 Mid"
-              img={require('../../../assets/icon/46.jpeg')}
+              img={require('../../assets/Image/46.jpeg')}
             />
           </TouchableOpacity>
           <TouchableOpacity>
             <Scrollitem
               title="Nike Blazer Mid"
-              img={require('../../../assets/icon/125.jpeg')}
+              img={require('../../assets/Image/125.jpeg')}
             />
           </TouchableOpacity>
           <TouchableOpacity>
             <Scrollitem
               title="Nike Air MaxG"
-              img={require('../../../assets/icon/127.png')}
+              img={require('../../assets/Image/127.png')}
             />
           </TouchableOpacity>
           <TouchableOpacity>
             <Scrollitem
               title="Air Jordan Retro"
-              img={require('../../../assets/icon/128.png')}
+              img={require('../../assets/Image/128.png')}
             />
           </TouchableOpacity>
         </ScrollView>

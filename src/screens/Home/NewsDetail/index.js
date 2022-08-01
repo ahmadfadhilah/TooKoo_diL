@@ -1,11 +1,8 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-import Keranjang from '../../../../components/molecules/Cart'
+import React, {Component} from 'react';
+import Keranjang from '../../../components/Keranjang';
 
 export default class index extends Component {
   render() {
-    return (
-      <Keranjang />
-    )
+    return <Keranjang />;
   }
 }

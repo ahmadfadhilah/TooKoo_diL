@@ -62,7 +62,7 @@ export default class SettingUser extends Component {
         {/* body */}
         <View style={Styles.images}>
           <Image
-            source={require('../../../../assets/icon/127.png')}
+            source={require('../../../assets/Image/127.png')}
             style={Styles.image}
           />
           <Text style={Styles.imagetext}>Joe nadi</Text>

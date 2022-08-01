@@ -6,7 +6,7 @@ const BoxProduct = props => {
     <View style={{padding: 16, paddingBottom: 0}}>
       <TouchableOpacity style={{position: 'relative'}}>
         <Image
-          source={require('../../../assets/icon/25.webp')}
+          source={require('../assets/Image/25.webp')}
           style={{height: 170, width: '100%', borderRadius: 6}}
         />
         <View
@@ -29,7 +29,7 @@ const BoxProduct = props => {
             left: 16,
           }}>
           <Image
-            source={require('../../../assets/icon/logo.jpg')}
+            source={require('../assets/Image/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -63,8 +63,7 @@ const BoxProduct = props => {
               Discover the latest of the collection
             </Text>
           </View>
-          <View style={{flex: 1, paddingLeft: 14}}>
-          </View>
+          <View style={{flex: 1, paddingLeft: 14}}></View>
         </View>
       </TouchableOpacity>
       <View
@@ -77,7 +76,7 @@ const BoxProduct = props => {
 
       <TouchableOpacity style={{position: 'relative'}}>
         <Image
-          source={require('../../../assets/icon/wkwk.png')}
+          source={require('../assets/Icon/wkwk.png')}
           style={{height: 170, width: '100%', borderRadius: 6}}
         />
         <View
@@ -100,7 +99,7 @@ const BoxProduct = props => {
             left: 16,
           }}>
           <Image
-            source={require('../../../assets/icon/logo.jpg')}
+            source={require('../assets/Image/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -134,8 +133,7 @@ const BoxProduct = props => {
               Nike SB Zoom Blazer Premium
             </Text>
           </View>
-          <View style={{flex: 1, paddingLeft: 14}}>
-          </View>
+          <View style={{flex: 1, paddingLeft: 14}}></View>
         </View>
       </TouchableOpacity>
       <View
@@ -148,7 +146,7 @@ const BoxProduct = props => {
 
       <TouchableOpacity style={{position: 'relative'}}>
         <Image
-          source={require('../../../assets/icon/22.webp')}
+          source={require('../assets/Image/22.webp')}
           style={{height: 170, width: '100%', borderRadius: 6}}
         />
         <View
@@ -171,7 +169,7 @@ const BoxProduct = props => {
             left: 16,
           }}>
           <Image
-            source={require('../../../assets/icon/logo.jpg')}
+            source={require('../assets/Image/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -205,8 +203,7 @@ const BoxProduct = props => {
               A Ma Maniere-Raised by woman
             </Text>
           </View>
-          <View style={{flex: 1, paddingLeft: 14}}>
-          </View>
+          <View style={{flex: 1, paddingLeft: 14}}></View>
         </View>
       </TouchableOpacity>
       <View
@@ -219,7 +216,7 @@ const BoxProduct = props => {
 
       <TouchableOpacity style={{position: 'relative'}}>
         <Image
-          source={require('../../../assets/icon/21.jpg')}
+          source={require('../assets/Image/21.jpg')}
           style={{height: 170, width: '100%', borderRadius: 6}}
         />
         <View
@@ -242,7 +239,7 @@ const BoxProduct = props => {
             left: 16,
           }}>
           <Image
-            source={require('../../../assets/icon/logo.jpg')}
+            source={require('../assets/Image/logo.jpg')}
             style={{
               width: undefined,
               height: undefined,
@@ -273,11 +270,10 @@ const BoxProduct = props => {
               Air Jordan Mid
             </Text>
             <Text style={{fontSize: 12, fontWeight: '400', color: 'white'}}>
-              Air Max Pre-Day: liquid time   .
+              Air Max Pre-Day: liquid time .
             </Text>
           </View>
-          <View style={{flex: 1, paddingLeft: 14}}>
-          </View>
+          <View style={{flex: 1, paddingLeft: 14}}></View>
         </View>
       </TouchableOpacity>
       <View
