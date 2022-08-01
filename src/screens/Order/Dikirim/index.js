@@ -13,7 +13,7 @@ const {UIManager} = NativeModules;
 UIManager.setLayoutAnimationEnabledExperimental &&
   UIManager.setLayoutAnimationEnabledExperimental(true);
 
-export default class Dikemas extends React.Component {
+export default class Dikirim extends React.Component {
   state = {
     w: 100,
     h: 100,

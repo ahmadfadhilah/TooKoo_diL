@@ -9,7 +9,7 @@ import BodyBar from '../../../components/BodyBar/index';
 import ScrolProduct from '../../../components/Scrollitem';
 import BoxProduct from '../../../components/BoxProduct';
 
-export class Dashboard extends Component {
+export class Home extends Component {
   constructor(props) {
     super(props);
   }
@@ -41,4 +41,4 @@ export class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+export default Home;

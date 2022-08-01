@@ -4,7 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {
-  Dashboard,
+  Home,
   Keranjang,
   Message,
   NewsDetail,
@@ -50,8 +50,8 @@ function Router() {
     <NavigationContainer>
       <Stack.Navigator headerMode={'none'}>
         <Stack.Screen name="SplashScreeen" component={SplashScreen} />
-        {/* Dashboard */}
-        <Stack.Screen name="Dashboard" component={Buttom} />
+        {/* Home */}
+        <Stack.Screen name="Home" component={Buttom} />
         <Stack.Screen name="NewsDetail" component={NewsDetail} />
         <Stack.Screen name="Message" component={Message} />
         <Stack.Screen name="Keranjang" component={Keranjang} />
@@ -62,8 +62,8 @@ function Router() {
         <Stack.Screen name="barOrder" component={barOrder} />
         <Stack.Screen name="BelumBayar" component={BelumBayar} />
         <Stack.Screen name="Dikirim" component={Dikirim} />
-        <Stack.Screen name="Dikirim" component={Selesai} />
-        <Stack.Screen name="Dikirim" component={Dikemas} />
+        <Stack.Screen name="Selesai" component={Selesai} />
+        <Stack.Screen name="Dikemas" component={Dikemas} />
         {/* Notivikasi */}
         <Stack.Screen name="Notivikasi" component={Notivikasi} />
         <Stack.Screen name="barNotiv" component={barNotiv} />
@@ -96,17 +96,17 @@ function Buttom() {
   return (
     <Tab.Navigator>
       <Tab.Screen
-        name="Dashboard"
+        name="Home"
         options={{
           tabBarIcon: ({color, size}) => (
             <MaterialCommunityIcons
-              name="Dashboard"
+              name="Home"
               color={color}
               size={size}
             />
           ),
         }}
-        component={Dashboard}
+        component={Home}
       />
       <Tab.Screen
         name="Order"

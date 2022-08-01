@@ -4,7 +4,7 @@ import Register from './Auth/Register';
 import ForgotPassword from './Auth/ForgotPassword';
 import NavTobTab from './Auth/NavTobTab';
 import Chat from './Chat';
-import Dashboard from './Home/Dashboard';
+import Home from './Home/Home';
 import Keranjang from './Home/Keranjang';
 import Kontak from './Home/Kontak';
 import Message from './Home/Message';
@@ -32,7 +32,7 @@ export {
   ForgotPassword,
   NavTobTab,
   Chat,
-  Dashboard,
+  Home,
   Keranjang,
   Kontak,
   Message,
