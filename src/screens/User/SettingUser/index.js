@@ -13,7 +13,7 @@ import User from 'react-native-vector-icons/FontAwesome';
 import Phone from 'react-native-vector-icons/Feather';
 import Email from 'react-native-vector-icons/Fontisto';
 
-export default class SettingProfile extends Component {
+export default class SettingUser extends Component {
   constructor() {
     super();
     this.state = {
@@ -41,7 +41,7 @@ export default class SettingProfile extends Component {
       _method: 'PUT',
     };
     this.setState({loading: true, loading: false});
-    alert('Berhasil dirubah')
+    alert('Berhasil dirubah');
   };
 
   render() {
@@ -106,7 +106,7 @@ export default class SettingProfile extends Component {
             <TextInput
               style={Styles.Input}
               placeholder="Phone"
-              onChangeText={(text) => this.setState({phone: text})}
+              onChangeText={text => this.setState({phone: text})}
             />
           </View>
         </View>
@@ -120,7 +120,7 @@ export default class SettingProfile extends Component {
             <TextInput
               style={Styles.Input}
               placeholder="Gender"
-              onChangeText={(text) => this.setState({gender: text})}
+              onChangeText={text => this.setState({gender: text})}
             />
           </View>
         </View>
@@ -140,13 +140,12 @@ export default class SettingProfile extends Component {
         </View>
         {/* selesai */}
         <View style={Styles.submit}>
-          <TouchableOpacity
-          onPress={() =>this.EditProfile()}>
-          {this.state.loading ? (
-            <ActivityIndicator size={'large'} color="skyblue" />
-          ) : (
-            <Text style={Styles.submittext}>Submit</Text>
-          )}      
+          <TouchableOpacity onPress={() => this.EditProfile()}>
+            {this.state.loading ? (
+              <ActivityIndicator size={'large'} color="skyblue" />
+            ) : (
+              <Text style={Styles.submittext}>Submit</Text>
+            )}
           </TouchableOpacity>
         </View>
       </View>

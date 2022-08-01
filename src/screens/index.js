@@ -3,7 +3,7 @@ import Login from './Auth/Login';
 import Register from './Auth/Register';
 import ForgotPassword from './Auth/ForgotPassword';
 import NavTobTab from './Auth/NavTobTab';
-import Chat from './Chat/Chat';
+import Chat from './Chat';
 import Dashboard from './Home/Dashboard';
 import Keranjang from './Home/Keranjang';
 import Kontak from './Home/Kontak';
@@ -15,11 +15,12 @@ import BelumBayar from './Order/BelumBayar';
 import Dikirim from './Order/Dikirim';
 import NavTobOrder from './Order/NavTobOrder';
 import Order from './Order/Order';
+import barOrder from './Order/barOrder';
 import Account from './User/Account';
 import NotAccount from './User/NotAccount';
 import Pesanan from './User/Pesanan';
 import Setting from './User/Setting';
-import SettingProfile from './User/SettingProfile';
+import SettingUser from './User/SettingUser';
 import pembeda from './User/pembeda';
 
 export {
@@ -40,10 +41,11 @@ export {
   Dikirim,
   NavTobOrder,
   Order,
+  barOrder,
   Account,
   NotAccount,
   Pesanan,
   Setting,
-  SettingProfile,
+  SettingUser,
   pembeda,
 };

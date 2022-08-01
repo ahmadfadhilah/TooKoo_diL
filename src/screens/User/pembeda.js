@@ -4,7 +4,7 @@ import Account from './account'
 import NotAccount from './NotAccount'
 import AsyncStorage from '@react-native-community/async-storage'
 
-export default class Pembeda extends Component {
+export default class pembeda extends Component {
     constructor() {
         super()
         this.state={

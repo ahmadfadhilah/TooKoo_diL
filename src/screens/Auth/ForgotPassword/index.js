@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 
-export class ForgotPw extends Component {
+export class ForgotPassword extends Component {
   render() {
     return (
       // <View style={{flex: 1, justifyContent: 'center', backgroundColor: 'grey'}}>
@@ -16,4 +16,4 @@ export class ForgotPw extends Component {
   }
 }
 
-export default ForgotPw;
+export default ForgotPassword;

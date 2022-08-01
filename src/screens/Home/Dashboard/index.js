@@ -9,7 +9,7 @@ import BodyBar from '../../../../containers/organisms/BodyBar';
 import ScrolProduct from '../../../../containers/organisms/HorizontalProduct';
 import BoxProduct from '../../../../components/molecules/BoxProduct';
 
-export class Home extends Component {
+export class Dashboard extends Component {
   constructor(props) {
     super(props);
   }
@@ -41,4 +41,4 @@ export class Home extends Component {
   }
 }
 
-export default Home;
+export default Dashboard;
